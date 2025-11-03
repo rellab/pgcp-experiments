@@ -1,0 +1,12 @@
+{
+    "area": {
+        "type": "rectangle",
+        "xmin": 0.0,
+        "xmax": 1.0,
+        "ymin": 0.0,
+        "ymax": 1.0
+    },
+    "pds_radius": 0.09,
+    "radius_domain": [0.2, 0.4],
+    "seed": 1234
+}

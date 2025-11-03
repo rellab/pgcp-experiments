@@ -1,4 +1,4 @@
-// main.cpp — CUDD C++ ラッパ (cuddObj) 版
+// main.cpp — CUDD C++ wrapper (cuddObj) version
 // g++ -O2 -std=c++17 main.cpp -o app -I/usr/local/include -I/usr/local/include/obj -L/usr/local/lib -lcudd
 
 #include <cstddef>
@@ -13,11 +13,11 @@
 #include <chrono>
 #include <random>
 #include <optional>
-#include <iterator>   // ★ 追加: back_inserter
-#include <iomanip>    // ★ 追加: setprecision
-#include <fstream>    // ★ 追加: ifstream 用
+#include <iterator>
+#include <iomanip>
+#include <fstream>
 
-// ===================== 幾何ユーティリティ =====================
+// ===================== Geometry Utilities =====================
 struct Point { double x, y; };
 
 struct Circle {
@@ -27,7 +27,7 @@ struct Circle {
 };
 
 struct Rectangle4 {
-    std::vector<Point> v; // 左下, 左上, 右上, 右下
+    std::vector<Point> v; // vertices: lower-left, upper-left, upper-right, lower-right
     Rectangle4() = default;
     explicit Rectangle4(std::vector<Point> vv) : v(std::move(vv)) {}
 };
@@ -37,17 +37,17 @@ inline bool isinside(const Circle& c, const Point& p) {
     return dx*dx + dy*dy <= c.radius * c.radius + 1e-15;
 }
 
-static inline double dist(const Point& a, const Point& b) {  // ★ 追加
+static inline double dist(const Point& a, const Point& b) {
     double dx=a.x-b.x, dy=a.y-b.y; return std::sqrt(dx*dx+dy*dy);
 }
 
-// 長方形を gridsize×gridsize に等分
+// Divide a rectangle into gridsize x gridsize sub-rectangles
 static std::vector<Rectangle4> createarea(const Rectangle4& rect, int gridsize) {
     std::vector<Rectangle4> out;
     out.reserve(gridsize * gridsize);
 
-    const double x0 = rect.v[0].x, y0 = rect.v[0].y; // 左下
-    const double x1 = rect.v[2].x, y1 = rect.v[2].y; // 右上
+    const double x0 = rect.v[0].x, y0 = rect.v[0].y; // lower-left
+    const double x1 = rect.v[2].x, y1 = rect.v[2].y; // upper-right
 
     for (int i = 0; i < gridsize; ++i) {
         for (int j = 0; j < gridsize; ++j) {
@@ -61,7 +61,7 @@ static std::vector<Rectangle4> createarea(const Rectangle4& rect, int gridsize) 
     return out;
 }
 
-// ===================== BDD ユーティリティ =====================
+// ===================== BDD Utilities =====================
 static BDD bdd_and(Cudd& M, const std::vector<BDD>& vs) {
     if (vs.empty()) return M.bddOne();
     BDD acc = M.bddOne();
@@ -82,6 +82,63 @@ static std::vector<T> set_intersection_vec(std::vector<T> a, std::vector<T> b) {
     std::vector<T> out;
     std::set_intersection(a.begin(), a.end(), b.begin(), b.end(), std::back_inserter(out));
     return out;
+}
+
+static double prob_rec(DdManager* mgr, DdNode* f,
+                       const std::unordered_map<int,double>& pb,
+                       std::unordered_map<DdNode*, double>& memo)
+{
+    // Terminal cases
+    if (f == Cudd_ReadOne(mgr))  return 1.0;
+    if (f == Cudd_ReadLogicZero(mgr)) return 0.0;
+
+    // Regular node (remove complement bit)
+    DdNode* reg = Cudd_Regular(f);
+    const bool isCompl = Cudd_IsComplement(f);
+
+    // Memoization (cache for regular node)
+    auto it = memo.find(reg);
+    if (it != memo.end()) {
+        // Apply complement bit if needed
+        return isCompl ? (1.0 - it->second) : it->second;
+    }
+
+    // Variable index
+    const int var = Cudd_NodeReadIndex(reg);
+    auto pit = pb.find(var);
+    if (pit == pb.end()) {
+        throw std::runtime_error("prob: missing probability for var index " + std::to_string(var));
+    }
+    const double p = pit->second;
+
+    // Children (then/else)
+    DdNode* T = Cudd_T(reg);
+    DdNode* E = Cudd_E(reg);
+
+    // If complemented, also complement children (apply NOT)
+    if (isCompl) {
+        T = Cudd_Not(T);
+        E = Cudd_Not(E);
+    }
+
+    // Recursive (no need for reference counting: read-only)
+    const double pt = prob_rec(mgr, T, pb, memo);
+    const double pe = prob_rec(mgr, E, pb, memo);
+
+    // Probability for this node
+    const double pf = p * pt + (1.0 - p) * pe;
+
+    // Cache for regular node (complement handled by caller)
+    memo.emplace(reg, pf);
+    return pf;
+}
+
+// External interface (can be called with cuddObj BDD)
+double prob(Cudd& M, const BDD& F, const std::unordered_map<int,double>& pb)
+{
+    std::unordered_map<DdNode*, double> memo;
+    memo.reserve(F.nodeCount() * 2);
+    return prob_rec(M.getManager(), F.getNode(), pb, memo);
 }
 
 // ===================== bddsolver =====================
@@ -180,8 +237,8 @@ static SolverResult bddsolver(
     return { varphi1, varphi2, varphi1.getNode() == varphi2.getNode(), level, areasByLevel };
 }
 
-// ===================== CSV 読み込み =====================
-// ヘッダ: name,x,y,radius
+// ===================== CSV Reader =====================
+// Header: name,x,y,radius
 static std::vector<Circle> readCirclesFromCSV(const std::string& filename) {
     std::vector<Circle> circles;
     std::ifstream file(filename);
@@ -190,7 +247,7 @@ static std::vector<Circle> readCirclesFromCSV(const std::string& filename) {
     }
 
     std::string line;
-    // 1行目（ヘッダ）を読み飛ばす
+    // Skip the first line (header)
     if (!std::getline(file, line)) {
         throw std::runtime_error("CSV is empty: " + filename);
     }
@@ -216,63 +273,6 @@ static std::vector<Circle> readCirclesFromCSV(const std::string& filename) {
     return circles;
 }
 
-static double prob_rec(DdManager* mgr, DdNode* f,
-                       const std::unordered_map<int,double>& pb,
-                       std::unordered_map<DdNode*, double>& memo)
-{
-    // 真理値端点
-    if (f == Cudd_ReadOne(mgr))  return 1.0;
-    if (f == Cudd_ReadLogicZero(mgr)) return 0.0;
-
-    // 正規ノード（補完ビットを落とす）
-    DdNode* reg = Cudd_Regular(f);
-    const bool isCompl = Cudd_IsComplement(f);
-
-    // メモ化（正規ノードに対してキャッシュ）
-    auto it = memo.find(reg);
-    if (it != memo.end()) {
-        // ここで補完ビットを反映
-        return isCompl ? (1.0 - it->second) : it->second;
-    }
-
-    // 変数インデックス
-    const int var = Cudd_NodeReadIndex(reg);
-    auto pit = pb.find(var);
-    if (pit == pb.end()) {
-        throw std::runtime_error("prob: missing probability for var index " + std::to_string(var));
-    }
-    const double p = pit->second;
-
-    // 子（then/else）
-    DdNode* T = Cudd_T(reg);
-    DdNode* E = Cudd_E(reg);
-
-    // f が補完なら、子も補完して評価（Not を付ける）
-    if (isCompl) {
-        T = Cudd_Not(T);
-        E = Cudd_Not(E);
-    }
-
-    // 再帰（参照カウントは不要：読み取りのみ）
-    const double pt = prob_rec(mgr, T, pb, memo);
-    const double pe = prob_rec(mgr, E, pb, memo);
-
-    // 現ノードの確率
-    const double pf = p * pt + (1.0 - p) * pe;
-
-    // 正規ノードでキャッシュ（補完は呼び出し側で 1 - 値 をとるので reg に対してのみ保存）
-    memo.emplace(reg, pf);
-    return pf;
-}
-
-// 外部インターフェイス（cuddObj の BDD でも呼べる）
-double prob(Cudd& M, const BDD& F, const std::unordered_map<int,double>& pb)
-{
-    std::unordered_map<DdNode*, double> memo;
-    memo.reserve(F.nodeCount() * 2);
-    return prob_rec(M.getManager(), F.getNode(), pb, memo);
-}
-
 // ===================== main =====================
 int main(int argc, char** argv) {
     if (argc < 4){
@@ -292,17 +292,16 @@ int main(int argc, char** argv) {
     std::cout << "Gridsize: " << gridsize << "\n";
     std::cout << "Maxlevel: " << maxlevel << "\n";
 
-    // === CSV から読み込み ===
+    // Read circles from CSV
     std::vector<Circle> circles = readCirclesFromCSV(csvpath);
 
-    // === 原点からの距離でソート ===
+    // Sort circles by distance from origin
     std::sort(circles.begin(), circles.end(),
             [](const Circle& a, const Circle& b){
                 return dist(a.center, {0,0}) < dist(b.center, {0,0});
             });
 
-
-    // === vars / pb を構築（p は全て同一） ===
+    // Build variable and probability maps (all probabilities are the same)
     std::unordered_map<std::string,int> vars;
     vars.reserve(circles.size());
     std::unordered_map<int,double> pb;
@@ -312,37 +311,11 @@ int main(int argc, char** argv) {
         pb[static_cast<int>(i)] = reliability;
     }
 
-    // std::vector<Circle> circles;
-    // circles.reserve(pts.size());
-    // for (size_t i=0;i<pts.size();++i){
-    //     double r = radius_choices[pick(rng)];
-    //     circles.push_back(Circle{ std::to_string(i+1), pts[i], r });
-    // }
-
-    // std::sort(circles.begin(), circles.end(),
-    //           [](const Circle& a, const Circle& b){
-    //               return dist(a.center, {0,0}) < dist(b.center, {0,0});
-    //           });
-
-    // std::unordered_map<std::string,int> vars;
-    // vars.reserve(circles.size());
-    // std::unordered_map<int,double> pb;
-    // pb.reserve(circles.size());
-    // for (size_t i=0;i<circles.size();++i){
-    //     vars[circles[i].name] = static_cast<int>(i);
-    //     pb[static_cast<int>(i)] = reliability;
-    // }
-
     std::cout << "Number of circles: " << circles.size() << "\n";
-    // for (size_t i=0;i<circles.size();++i){
-    //     const auto& c = circles[i];
-    //     std::cout << "  Circle " << c.name
-    //               << ": center=(" << c.center.x << "," << c.center.y << "), radius=" << c.radius << "\n";
-    // }
 
     Cudd M;
 
-    // ★ targetarea を定義（例: [0,0]~[1,1] の正方形）
+    // Define target area (example: square from [0,0] to [1,1])
     Rectangle4 targetarea({{0,0}, {0,1}, {1,1}, {1,0}});
 
     auto t0 = std::chrono::steady_clock::now();
