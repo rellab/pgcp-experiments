@@ -1,28 +1,20 @@
-# Experiment 2: Varying PDS Radius
+# Scalability
 
-## Generate Data with Different PDS Radii
+- Performance for larger instances
+- PDS: 0.15, 0.14, 0.13, 0.12, 0.11, 0.10, 0.09, 0.08
+- Radius: [0.2, 0.4]
+- Measure: computation time, nodes, peak nodes, memory usage
 
-```sh
-mkdir -p data
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config015.json data/data015.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config014.json data/data014.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config013.json data/data013.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config012.json data/data012.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config011.json data/data011.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config010.json data/data010.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config009.json data/data009.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia gendata.jl dataconfig/config008.json data/data008.json
-```
-
-## Run BDD Solver on Generated Data
+## Run BDD solver
 
 ```sh
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data015.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data014.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data013.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data012.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data011.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data010.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data009.json
-docker run -it --rm -v $PWD:/work -w /work cudd-julia julia bdd_solver.jl data/data008.json
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data015 1 50 angles_from_center experiment2/results_bdd_015.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data014 1 50 angles_from_center experiment2/results_bdd_014.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data013 1 50 angles_from_center experiment2/results_bdd_013.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data012 1 50 angles_from_center experiment2/results_bdd_012.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data011 1 50 angles_from_center experiment2/results_bdd_011.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data010 1 50 angles_from_center experiment2/results_bdd_010.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data009 1 50 angles_from_center experiment2/results_bdd_009.csv
+docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bdd_batch.jl data/data008 1 50 angles_from_center experiment2/results_bdd_008.csv
 ```
+
