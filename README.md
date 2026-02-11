@@ -1,5 +1,5 @@
 
-# gpcp-experiments
+# pgcp-experiments
 
 An experiments repository to compare a BDD-based solver (computing probability lower/upper bounds) implemented with Julia + MiniCUDD against a Branch and Bound solver (enumeration-based).
 
@@ -105,11 +105,6 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
 - [dataconfig/](dataconfig/): JSON configs for data generation
 - [data/](data/): generated datasets (e.g. `data010-001.json`)
 - [experiment1/](experiment1/), [experiment2/](experiment2/), [experiment3/](experiment3/), [experiment4/](experiment4/): experiment instructions and outputs (CSV/figures)
-
-## Common pitfalls
-
-- Docker build is slow/fails: it builds and tests MiniCUDD during the image build. On Apple Silicon, try `--platform=linux/amd64`.
-- Missing `data/...-NNN.json`: when `samples` >= 2, outputs are numbered; ensure `prefix` and the `start/end` indices match the generated files.
 
 
 
