@@ -1,12 +1,13 @@
 
 # pgcp-experiments
 
-An experiments repository to compare a BDD-based solver (computing probability lower/upper bounds) implemented with Julia + MiniCUDD against a Branch and Bound solver (enumeration-based).
+An experiments repository for a BDD-based symbolic reliability solver (computing certified lower/upper bounds for probabilistic geometric coverage), implemented with Julia + MiniCUDD. Includes comparisons against a Branch and Bound baseline on synthetic instances and a real-map case study on a non-rectangular campus polygon.
 
 - Input data: a set of circles (center, radius) represented as JSON
 - Data generation: circle centers are generated via Poisson Disk Sampling (PDS)
-- BDD solver: targets the unit square ([0,1]×[0,1]) and computes lower/upper bounds from the probabilities of formulas (varphi1/varphi2)
-- Experiments: see [experiment1/README.md](experiment1/README.md), [experiment2/README.md](experiment2/README.md), [experiment3/README.md](experiment3/README.md)
+- BDD solver (rectangle partition): targets the unit square ([0,1]×[0,1]) with adaptive 2×2 grid refinement, computing certified lower/upper bounds from the probabilities of formulas (varphi1/varphi2)
+- BDD solver (triangle partition): targets an arbitrary polygon with a constrained Delaunay triangulation as the initial partition and 1:4 edge-midpoint refinement (added for experiment5)
+- Experiments: see [experiment1/README.md](experiment1/README.md), [experiment2/README.md](experiment2/README.md), [experiment3/README.md](experiment3/README.md), [experiment4/run.sh](experiment4/run.sh), [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
 
 ## Prerequisites
 
@@ -98,13 +99,15 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
 - Experiment 2 (scalability): [experiment2/README.md](experiment2/README.md)
 - Experiment 3 (variable ordering evaluation): [experiment3/README.md](experiment3/README.md)
 - Experiment 4 (small sample run): [experiment4/run.sh](experiment4/run.sh)
+- Experiment 5 (triangle case study on the Higashi-Hiroshima campus polygon): [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
 
 ## Repository layout
 
-- [scripts/](scripts/): data generation, solver runners, visualization (Julia)
+- [scripts/](scripts/): data generation, solver runners, visualization (Julia). Key files: `bdd_solver.jl` (rectangle-partition BDD solver), `bdd_solver_triangle.jl` (triangle-partition variant used by experiment5), `branch_and_bound.jl` (BnB baseline), `gendata.jl` (PDS generator)
 - [dataconfig/](dataconfig/): JSON configs for data generation
 - [data/](data/): generated datasets (e.g. `data010-001.json`)
 - [experiment1/](experiment1/), [experiment2/](experiment2/), [experiment3/](experiment3/), [experiment4/](experiment4/): experiment instructions and outputs (CSV/figures)
+- [experiment5/](experiment5/): triangle case study on a real campus polygon (sensor config, CDT, results, reproducibility manifest)
 
 
 
