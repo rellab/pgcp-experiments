@@ -1,0 +1,11 @@
+# Experiment 5 — content hashes (excluding timing fields)
+
+## Raw-file SHA-256
+  d19afc3f816850b524d48ebdf74418d2ec7e7f3aa97d679ad4cfe25ea3700205  processed/campus_normalized.json
+  c18c0fe4f26f9e05bb90e8e3a5cbe3ec1bfec71a392377bc567733e226a13c7f  data/campus_sensors.json
+  97c26bc7d842326832064bcfa2cc6748dd4c104f04706e61b823170742f18a02  results/campus_initial_triangulation.json
+  a4396e42989a2f8af76ff3002ab4ef0b07a16bf52a032246e169cbb05ab97802  results/campus_sweep_pk.csv
+
+## Content SHA-256 (timing fields dropped)
+  ff5056cdc953df62142e5c73b6bf2b1001a33c0a6d80f03f9ff7139fe9a24bd7  results/campus_bounds.csv  (excludes 'time_sec' column)
+  f080a5fcb3b5149cdc43225c8f7ba6f9e3eb1c1db2eb4bff6fefbcdc95de35f4  results/campus_summary.json  (excludes 'wall_time_sec')
