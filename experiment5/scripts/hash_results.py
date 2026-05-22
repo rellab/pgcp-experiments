@@ -79,6 +79,13 @@ def main() -> None:
         lines.append(
             f"  {hash_summary_content(cs)}  "
             f"{cs.relative_to(HERE)}  (excludes 'wall_time_sec')")
+    lines.append("")
+    lines.append("## Analysis outputs — raw SHA-256 (no timing fields)")
+    for p in (RES / "campus_importance.csv", RES / "campus_minsets.json"):
+        if p.exists():
+            lines.append(f"  {hash_file_raw(p)}  {p.relative_to(HERE)}")
+        else:
+            lines.append(f"  MISSING  {p.relative_to(HERE)}")
     text = "\n".join(lines) + "\n"
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(text)

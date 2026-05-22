@@ -178,15 +178,24 @@ struct SolverResult
     level::Int
     resolvedByLevel::Vector{Tuple{Int,Int}}   # (level, n_resolved)
     snapshots::Vector{LevelSnapshot}
+    # Run totals (summed over all levels), for the separate-run-per-maxLevel
+    # protocol. `resolved_equiv_total` counts triangles accepted by the local
+    # or global equivalence test (Algorithm lines 8/14); `forced_total` counts
+    # triangles committed only because they hit the depth limit (line 21).
+    reached_total::Int
+    resolved_equiv_total::Int
+    forced_total::Int
+    refined_total::Int
 end
 
 mutable struct LevelStat
     reached::Int
-    resolved::Int
+    resolved::Int    # all commits: equivalence-accepted + depth-limit forced
     refined::Int
+    forced::Int      # subset of `resolved` committed only because Level == maxlevel
     area::Float64
 end
-LevelStat() = LevelStat(0, 0, 0, 0.0)
+LevelStat() = LevelStat(0, 0, 0, 0, 0.0)
 
 @inline function triangle_area(t::Triangle3)
     a, b, c = v1(t), v2(t), v3(t)
@@ -300,6 +309,9 @@ function triangle_bdd_solver(M::MiniCUDD.Manager, vars::Dict{String,Int},
             varphi2 = v2d
             s.resolved += 1
             s.area    += triangle_area(t)
+            if !(same_local || same_global)
+                s.forced += 1          # committed at the depth limit (Alg. line 21)
+            end
         else
             s.refined += 1
             for child in subdivide(t)
@@ -327,8 +339,14 @@ function triangle_bdd_solver(M::MiniCUDD.Manager, vars::Dict{String,Int},
 
     by_level = sort(collect(level_stats); by = first)
     pairs = [(Int(k), Int(v.resolved)) for (k,v) in by_level]
+    reached_total = sum(v.reached  for (_, v) in level_stats; init = 0)
+    commits_total = sum(v.resolved for (_, v) in level_stats; init = 0)
+    forced_total  = sum(v.forced   for (_, v) in level_stats; init = 0)
+    refined_total = sum(v.refined  for (_, v) in level_stats; init = 0)
     return SolverResult(varphi1, varphi2,
-                        varphi1.ptr == varphi2.ptr, level, pairs, snapshots)
+                        varphi1.ptr == varphi2.ptr, level, pairs, snapshots,
+                        reached_total, commits_total - forced_total,
+                        forced_total, refined_total)
 end
 
 # ===================== JSON I/O =====================

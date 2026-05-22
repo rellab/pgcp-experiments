@@ -1,5 +1,6 @@
 {
   "n_initial_tris": 326,
+  "protocol": "separate-run-per-maxLevel",
   "R_lower": 0.44769162907809484,
   "R_upper": 0.44769162907809484,
   "reliability_p": 0.9,
@@ -51,13 +52,17 @@
   ],
   "n_sensors": 53,
   "nodes_phi1_final": 174,
-  "wall_time_sec": 0.894637417,
-  "maxlevel": 12,
+  "wall_time_sec": 0.089081875,
+  "maxlevel_range": [
+    1,
+    11
+  ],
+  "maxlevel": 11,
   "convergence": true,
   "level_max_seen": 11,
   "sensors_sha256": "c8ff0cb73cac023c146b2e571843e35ea12babee3c23cbf60b5ef9e13c396f89",
   "nodes_phi2_final": 174,
   "mesh_sha256": "134dae749ee668063a594676e8c04bdb65d0feb6fffe92541f1dc3af9ca07960",
   "sort_mode": "xcoordinate",
-  "peak_nodes": 24528
+  "peak_nodes": 17374
 }

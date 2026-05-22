@@ -1,11 +1,11 @@
-"""Two-panel case-study figure for IEEE TR §VI-H.
+"""Case-study figures for IEEE TR Section VI.
 
-Left  : campus polygon with PDS-placed sensor disks.
-Right : initial CDT (polygon + sensor centers as Steiner points).
+Two standalone single-column figures (drawn separately so neither is shrunk):
+- campus_sensors.pdf : campus polygon with the PDS-placed sensor disks.
+- campus_cdt.pdf     : initial CDT (polygon + sensor centers as Steiner points).
 
-Grayscale only (IEEE print). Writes
-- experiment5/results/campus_figure.pdf  (canonical, copied to manuscript/figs)
-- experiment5/results/campus_figure.png  (preview)
+Grayscale only (IEEE print). Writes the PDFs (canonical, copied to
+manuscript/figs) and matching PNG previews to experiment5/results/.
 """
 from __future__ import annotations
 
@@ -17,11 +17,13 @@ import numpy as np
 from matplotlib.collections import LineCollection
 from matplotlib.patches import Circle, Polygon as MplPolygon
 
-HERE     = Path(__file__).resolve().parent.parent
-SENS     = HERE / "data"     / "campus_sensors.json"
-MESH     = HERE / "results"  / "campus_initial_triangulation.json"
-OUT_PDF  = HERE / "results"  / "campus_figure.pdf"
-OUT_PNG  = HERE / "results"  / "campus_figure.png"
+HERE         = Path(__file__).resolve().parent.parent
+SENS         = HERE / "data"     / "campus_sensors.json"
+MESH         = HERE / "results"  / "campus_initial_triangulation.json"
+OUT_SENS_PDF = HERE / "results"  / "campus_sensors.pdf"
+OUT_SENS_PNG = HERE / "results"  / "campus_sensors.png"
+OUT_CDT_PDF  = HERE / "results"  / "campus_cdt.pdf"
+OUT_CDT_PNG  = HERE / "results"  / "campus_cdt.png"
 
 
 def draw_sensors_panel(ax, poly, circles, bbox):
@@ -41,7 +43,6 @@ def draw_sensors_panel(ax, poly, circles, bbox):
     ax.set_aspect("equal")
     ax.set_xlabel("x (normalized)")
     ax.set_ylabel("y (normalized)")
-    ax.set_title(f"(a) Campus polygon and {len(circles)} sensor disks")
 
 
 def draw_mesh_panel(ax, poly, verts, tris, sensors, bbox):
@@ -62,7 +63,7 @@ def draw_mesh_panel(ax, poly, verts, tris, sensors, bbox):
     ax.set_ylim(-0.02, bbox[3] + 0.02)
     ax.set_aspect("equal")
     ax.set_xlabel("x (normalized)")
-    ax.set_title(f"(b) Initial CDT: {len(verts)} vertices, {len(tris)} triangles")
+    ax.set_ylabel("y (normalized)")
 
 
 def main() -> None:
@@ -75,18 +76,25 @@ def main() -> None:
     verts   = mesh["vertices"]
     tris    = mesh["triangles"]
 
-    panel_h = 4.0 * bbox[3]          # height proportional to y-extent
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(9.0, panel_h + 0.6))
+    h = 4.4 * bbox[3] + 0.45        # height proportional to the y-extent
 
-    draw_sensors_panel(axL, poly, circles, bbox)
-    draw_mesh_panel   (axR, poly, verts, tris, circles, bbox)
+    fig_s, ax_s = plt.subplots(figsize=(4.4, h))
+    draw_sensors_panel(ax_s, poly, circles, bbox)
+    fig_s.tight_layout()
+    OUT_SENS_PDF.parent.mkdir(parents=True, exist_ok=True)
+    fig_s.savefig(OUT_SENS_PDF)
+    fig_s.savefig(OUT_SENS_PNG, dpi=150)
+    plt.close(fig_s)
 
-    fig.tight_layout()
-    OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT_PDF)
-    fig.savefig(OUT_PNG, dpi=150)
-    print(f"wrote {OUT_PDF}")
-    print(f"wrote {OUT_PNG}")
+    fig_c, ax_c = plt.subplots(figsize=(4.4, h))
+    draw_mesh_panel(ax_c, poly, verts, tris, circles, bbox)
+    fig_c.tight_layout()
+    fig_c.savefig(OUT_CDT_PDF)
+    fig_c.savefig(OUT_CDT_PNG, dpi=150)
+    plt.close(fig_c)
+
+    print(f"wrote {OUT_SENS_PDF}")
+    print(f"wrote {OUT_CDT_PDF}")
 
 
 if __name__ == "__main__":

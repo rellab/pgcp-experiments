@@ -17,9 +17,13 @@ results/campus_initial_triangulation.json
 results/campus_bounds.csv
 results/campus_summary.json
 results/campus_sweep_pk.csv
+results/campus_importance.csv      (Birnbaum / criticality importance)
+results/campus_minsets.json        (min-path / min-cut sets)
         │ (Python: matplotlib)
         ▼
-results/campus_figure.pdf   →   manuscript/figs/campus_figure.pdf
+results/campus_sensors.pdf            →  manuscript/figs/campus_sensors.pdf
+results/campus_cdt.pdf                →  manuscript/figs/campus_cdt.pdf
+results/campus_importance_figure.pdf  →  manuscript/figs/campus_importance_figure.pdf
 ```
 
 ## Reproduce from scratch
@@ -33,19 +37,25 @@ python3 scripts/gen_sensors.py
 # 2. Initial CDT (Python; deterministic)
 python3 scripts/triangulate.py
 
-# 3. BDD solve + per-level snapshots (Julia/MiniCUDD via Docker)
+# 3. BDD solve, separate run to termination per maxLevel (Julia/MiniCUDD via Docker)
 docker run --rm -v "$(pwd)/..:/work" -w /work cudd-julia \
-    julia experiment5/scripts/run_triangle_bdd.jl 12 xcoordinate
+    julia experiment5/scripts/run_triangle_bdd_perlevel.jl 11 xcoordinate
 
 # 4. p_k sensitivity sweep (re-evaluates the converged BDD, no resolve)
 docker run --rm -v "$(pwd)/..:/work" -w /work cudd-julia \
     julia experiment5/scripts/sweep_pk.jl 12 xcoordinate
 
-# 5. Case-study figure (Python)
-python3 scripts/plot_case_study_figure.py
-cp results/campus_figure.pdf ../../manuscript/figs/campus_figure.pdf
+# 5. Importance + minimal-set analysis of the converged BDD (Julia/MiniCUDD)
+docker run --rm -v "$(pwd)/..:/work" -w /work cudd-julia \
+    julia experiment5/scripts/analyze_campus.jl 12 xcoordinate
 
-# 6. Verify hashes match below
+# 6. Case-study figures (Python)
+python3 scripts/plot_case_study_figure.py
+cp results/campus_sensors.pdf results/campus_cdt.pdf ../../manuscript/figs/
+python3 scripts/plot_importance_figure.py
+cp results/campus_importance_figure.pdf ../../manuscript/figs/campus_importance_figure.pdf
+
+# 7. Verify hashes match below
 python3 scripts/hash_results.py
 ```
 
@@ -61,7 +71,8 @@ python3 scripts/hash_results.py
 | 1    | Component reliability | `p_k = 0.9` (baseline)             |
 | 2    | Triangle flags        | `"p"` (PSLG only, no Steiner)      |
 | 3    | BDD variable ordering | `xcoordinate` (sort by x)          |
-| 3    | maxlevel              | `12` (converges at level 11)       |
+| 3    | maxLevel protocol     | separate run to termination, `maxLevel = 1..11` |
+| 3    | Convergence           | at `maxLevel = 11` (`Phi1 == Phi2`) |
 
 ## Expected hashes (regenerate with `python3 scripts/hash_results.py`)
 
@@ -77,8 +88,15 @@ a4396e42989a2f8af76ff3002ab4ef0b07a16bf52a032246e169cbb05ab97802  results/campus
 ### Content SHA-256 (timing fields excluded)
 
 ```
-ff5056cdc953df62142e5c73b6bf2b1001a33c0a6d80f03f9ff7139fe9a24bd7  results/campus_bounds.csv   (drops 'time_sec' column)
-f080a5fcb3b5149cdc43225c8f7ba6f9e3eb1c1db2eb4bff6fefbcdc95de35f4  results/campus_summary.json (drops 'wall_time_sec')
+a04139201786bfc7b963c88c17625f6237ec0e4f838d017459109bcbf0c3f8ec  results/campus_bounds.csv   (drops 'time_sec' column)
+4021dcc5587b6436d6f1c643744080577176bb55f5ffd20334d399bb7eb2f4b1  results/campus_summary.json (drops 'wall_time_sec')
+```
+
+### Analysis outputs — raw SHA-256 (no timing fields)
+
+```
+1a0648b5fd5ffe2abb39b5cfca120a666e898caa9f1d48d330d097880ddecc3a  results/campus_importance.csv
+70917dd5e635f85630c07bb1cd8cf7873fdcf7c808cd8b1894b622a5e43b8cf9  results/campus_minsets.json
 ```
 
 ### Embedded `_meta` content hashes (self-identifying inside the JSONs)
@@ -98,21 +116,24 @@ results/campus_initial_triangulation.json._meta.mesh_sha256
 | Number of sensors                                 | 53 (27 small, 26 large)          |
 | Initial CDT vertices                              | 276 (223 polygon + 53 sensor)    |
 | Initial CDT triangles                             | 326                              |
-| Convergence level                                 | 11 (out of maxlevel = 12)        |
-| Total triangles processed (sum over all levels)   | 2 214                            |
-| Peak BDD nodes (incl. snapshot overhead)          | 24 528                           |
+| Convergence `maxLevel`                            | 11                               |
+| Triangles popped, converged run (`maxLevel = 11`) | 2 214                            |
+| Peak BDD nodes, converged run                     | 17 374                           |
 | **R = R_lower = R_upper at p_k = 0.9**            | **0.44769162907809484**          |
 | Effective number of critical sensors (log R / log p_k) | 7.6280                      |
 
-The per-level `R_lower` / `R_upper` columns in `campus_bounds.csv` report
-**certified bounds over the full partition** at end-of-level: the snapshot
-ANDs in the pending triangles' `phi_1` / `phi_2` so the bracket reflects
-resolved triangles *and* refined-child triangles still in the queue. The
-two sequences are monotone (R_lower non-decreasing, R_upper non-increasing)
-and meet at level 10. Side effect: this snapshot computation creates
-transient BDDs that inflate CUDD's cumulative peak counter from the
-algorithm-only value of 17 374 to 24 528; the inflation does not affect
-the final converged value `R = 0.44769162907809484`.
+Each row of `campus_bounds.csv` is the terminal state of an independent
+run of Algorithm 2 at a fixed `maxLevel` (driver
+`scripts/run_triangle_bdd_perlevel.jl`); the solver is invoked fresh for
+every row. `R_lower` / `R_upper` are the certified bounds `Pr(Phi_2)` /
+`Pr(Phi_1)` over the final partition of that run. Both sequences are
+monotone in `maxLevel` (R_lower non-decreasing, R_upper non-increasing)
+and coincide at `maxLevel = 11`, where the run also verifies the global
+equivalence `Phi_1 == Phi_2` and terminates with `converged = true`. The
+driver passes `pb = nothing` to the solver, so the solver's per-level
+snapshot instrumentation does no transient AND-chain work; the reported
+`peak_nodes` is therefore the algorithm-only peak (17 374 at the
+converged run), with no snapshot inflation.
 
 ### `p_k` sensitivity (from `campus_sweep_pk.csv`)
 
@@ -130,10 +151,31 @@ the final converged value `R = 0.44769162907809484`.
 | 0.995   | 0.9653753...     |
 | 0.999   | 0.9930145...     |
 
+### Importance and minimal-set analysis (from `campus_importance.csv`, `campus_minsets.json`)
+
+Computed from the converged BDD by `scripts/analyze_campus.jl`, which uses
+`scripts/bdd_analysis.jl` (the MiniCUDD port of FaultTree.jl's `minsol` and
+`grad`). All quantities are at `p_k = 0.9`.
+
+| Quantity                                    | Value                     |
+|---------------------------------------------|---------------------------|
+| Essential sensors (criticality 1)           | 7                         |
+| Birnbaum importance of an essential sensor  | 0.49743514... (= R/p_k)   |
+| Sensors with nonzero Birnbaum importance    | 36 of 53                  |
+| Sensors not affecting Phi                   | 17                        |
+| Min-cut sets                                | 29 (cardinality 1..5)     |
+| Singleton min-cut sets                      | 7 (the essential sensors) |
+| Min-path sets                               | 1842 (cardinality 15..19) |
+
+The seven essential sensors are `{13, 16, 22, 25, 26, 30, 53}`. Each lies on
+every min-path set and is a singleton min-cut set. The analysis is a
+marginal-cost traversal of the same converged BDD that produced `R`; it
+builds no new geometry and does not change `R`.
+
 ## What is NOT byte-stable
 
 - `time_sec` and `wall_time_sec` columns/fields. These reflect wall-clock duration in the Docker container at the moment of the run and naturally vary; they are excluded from the content hashes.
-- `results/campus_figure.pdf` contains a creation timestamp in its metadata; the figure is derived from the (hashed) JSON inputs and is regenerated from those, so we do not hash the PDF directly.
+- `results/campus_sensors.pdf`, `results/campus_cdt.pdf`, and `results/campus_importance_figure.pdf` contain a creation timestamp in their metadata; the figures are derived from the (hashed) JSON inputs and regenerated from those, so we do not hash the PDFs directly.
 
 ## Environment
 

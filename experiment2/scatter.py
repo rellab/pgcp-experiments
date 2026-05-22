@@ -54,7 +54,7 @@ def plot_scatter(df, ycol, ylabel, outfile):
             label="convergence = false",
         )
 
-    ax.set_xlabel("Number of disks")
+    ax.set_xlabel("Number of components")
     ax.set_ylabel(ylabel)
     ax.set_yscale("log")
     ax.grid(True, which="both", linestyle="--", linewidth=0.6, alpha=0.5)

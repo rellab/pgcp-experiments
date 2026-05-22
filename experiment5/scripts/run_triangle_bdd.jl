@@ -1,13 +1,19 @@
 #!/usr/bin/env julia
-# Run the triangle BDD solver on the campus configuration.
+# Diagnostic: per-level snapshots inside a SINGLE run of the triangle BDD solver.
+#
+# NOTE: this is NOT the canonical campus per-level experiment. The manuscript
+# table tab:campus-bounds is produced by run_triangle_bdd_perlevel.jl, which
+# runs the solver fresh to termination for each maxLevel. This script is kept
+# only as a within-run diagnostic and writes to *_snapshot.* so that it does
+# not clobber the canonical campus_bounds.csv / campus_summary.json.
 #
 #   julia experiment5/scripts/run_triangle_bdd.jl [maxlevel] [sort_mode]
 #
 # Defaults: maxlevel = 8, sort_mode = xcoordinate.
 #
 # Outputs:
-#   experiment5/results/campus_bounds.csv       — per-level snapshots
-#   experiment5/results/campus_summary.json     — final summary
+#   experiment5/results/campus_bounds_snapshot.csv    — per-level snapshots
+#   experiment5/results/campus_summary_snapshot.json  — final summary
 #
 # Inputs (must exist):
 #   experiment5/data/campus_sensors.json
@@ -24,8 +30,8 @@ const HERE        = @__DIR__
 const ROOT        = abspath(joinpath(HERE, ".."))
 const SENS_PATH   = joinpath(ROOT, "data",    "campus_sensors.json")
 const MESH_PATH   = joinpath(ROOT, "results", "campus_initial_triangulation.json")
-const OUT_CSV     = joinpath(ROOT, "results", "campus_bounds.csv")
-const OUT_SUMJSON = joinpath(ROOT, "results", "campus_summary.json")
+const OUT_CSV     = joinpath(ROOT, "results", "campus_bounds_snapshot.csv")
+const OUT_SUMJSON = joinpath(ROOT, "results", "campus_summary_snapshot.json")
 
 function sort_circles(circles, mode::Symbol)
     if     mode === :none

@@ -7,5 +7,9 @@
   a4396e42989a2f8af76ff3002ab4ef0b07a16bf52a032246e169cbb05ab97802  results/campus_sweep_pk.csv
 
 ## Content SHA-256 (timing fields dropped)
-  ff5056cdc953df62142e5c73b6bf2b1001a33c0a6d80f03f9ff7139fe9a24bd7  results/campus_bounds.csv  (excludes 'time_sec' column)
-  f080a5fcb3b5149cdc43225c8f7ba6f9e3eb1c1db2eb4bff6fefbcdc95de35f4  results/campus_summary.json  (excludes 'wall_time_sec')
+  a04139201786bfc7b963c88c17625f6237ec0e4f838d017459109bcbf0c3f8ec  results/campus_bounds.csv  (excludes 'time_sec' column)
+  4021dcc5587b6436d6f1c643744080577176bb55f5ffd20334d399bb7eb2f4b1  results/campus_summary.json  (excludes 'wall_time_sec')
+
+## Analysis outputs — raw SHA-256 (no timing fields)
+  1a0648b5fd5ffe2abb39b5cfca120a666e898caa9f1d48d330d097880ddecc3a  results/campus_importance.csv
+  70917dd5e635f85630c07bb1cd8cf7873fdcf7c808cd8b1894b622a5e43b8cf9  results/campus_minsets.json
