@@ -7,6 +7,7 @@ An experiments repository for a BDD-based symbolic reliability solver (computing
 - Data generation: circle centers are generated via Poisson Disk Sampling (PDS)
 - BDD solver (rectangle partition): targets the unit square ([0,1]×[0,1]) with adaptive 2×2 grid refinement, computing certified lower/upper bounds from the probabilities of formulas (varphi1/varphi2)
 - BDD solver (triangle partition): targets an arbitrary polygon with a constrained Delaunay triangulation as the initial partition and 1:4 edge-midpoint refinement (added for experiment5)
+- BDD analysis: once a structure-function BDD has converged, [scripts/bdd_analysis.jl](scripts/bdd_analysis.jl) extracts minimal path/cut sets (via `minsol`) and Birnbaum/criticality/structure importance at marginal cost (a MiniCUDD port of the FaultTree.jl analysis layer; used by experiment5)
 - Experiments: see [experiment1/README.md](experiment1/README.md), [experiment2/README.md](experiment2/README.md), [experiment3/README.md](experiment3/README.md), [experiment4/run.sh](experiment4/run.sh), [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
 
 ## Prerequisites
@@ -103,11 +104,11 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
 
 ## Repository layout
 
-- [scripts/](scripts/): data generation, solver runners, visualization (Julia). Key files: `bdd_solver.jl` (rectangle-partition BDD solver), `bdd_solver_triangle.jl` (triangle-partition variant used by experiment5), `branch_and_bound.jl` (BnB baseline), `gendata.jl` (PDS generator)
+- [scripts/](scripts/): data generation, solver runners, analysis, visualization (Julia). Key files: `bdd_solver.jl` (rectangle-partition BDD solver), `bdd_solver_triangle.jl` (triangle-partition variant used by experiment5), `bdd_analysis.jl` (minimal path/cut sets and Birnbaum importance on a converged BDD), `branch_and_bound.jl` (BnB baseline), `gendata.jl` (PDS generator)
 - [dataconfig/](dataconfig/): JSON configs for data generation
 - [data/](data/): generated datasets (e.g. `data010-001.json`)
 - [experiment1/](experiment1/), [experiment2/](experiment2/), [experiment3/](experiment3/), [experiment4/](experiment4/): experiment instructions and outputs (CSV/figures)
-- [experiment5/](experiment5/): triangle case study on a real campus polygon (sensor config, CDT, results, reproducibility manifest)
+- [experiment5/](experiment5/): triangle case study on a real campus polygon (sensor config, CDT, certified bounds, `p_k` sweep, importance / minimal-set analysis, reproducibility manifest)
 
 
 
