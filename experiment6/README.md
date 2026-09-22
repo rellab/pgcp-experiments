@@ -156,3 +156,18 @@ Executed sequentially on an otherwise idle machine on mains power.
   stored results and has been replaced by these values.
 - `scripts/clopper_pearson.py` computes the exact binomial intervals used in
   the paper for the Monte Carlo failure counts.
+
+## Branch-and-bound reliability cross-check (`scripts/bnb_reliability_check.jl`, 2026-09-23)
+
+`experiment1/results_bnb_*.csv` store only the number of covering path
+vectors and the running time. This script recomputes the path vectors with
+`BranchAndBoundSolver.bnbsolver`, builds their up-closure as a BDD, evaluates
+its probability, and compares it with `reliability_lb` from the BDD solver
+(`results/bnb_reliability_{020,030,040}.csv`). Result: 149 of 150 instances
+agree to within 2.2e-16; on `data020-027` the VoronoiCells.jl call inside the
+baseline raises "Point is not inside rectangle" although every center lies in
+the unit square, so that instance has no baseline value. `data020-025`, which
+is absent from the stored `results_bnb_020.csv`, ran without error here.
+Per-instance timings in the stored CSVs show the baseline faster than the BDD
+solver on 4 of 50 `data030` and 24 of 50 `data040` instances; the medians
+favour the BDD solver on every dataset.

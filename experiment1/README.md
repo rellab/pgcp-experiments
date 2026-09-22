@@ -30,3 +30,11 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bnb_batch.
 docker run --rm -v "$PWD:/work" -w /work cudd-julia julia scripts/run_bnb_batch.jl data/data020 1 50 experiment1/results_bnb_020.csv
 ```
 
+
+## Notes (2026-09-23)
+
+- `results_bnb_020.csv` has 48 rows: `data020-025` and `data020-027` are
+  missing. A rerun (see `experiment6/README.md`) shows that 025 runs normally
+  and that 027 fails inside VoronoiCells.jl ("Point is not inside rectangle").
+- The BnB CSVs do not store reliabilities; `experiment6/scripts/bnb_reliability_check.jl`
+  recomputes them from the path sets and confirms agreement with the BDD solver.
