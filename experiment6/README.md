@@ -39,7 +39,7 @@ as independent ground truth for a given component state.
   The cell is rebuilt per state by half-plane clipping (about 200 times slower
   than A; used to validate A).
 
-Both assume general position and record the smallest margin they observed.
+Both are double-precision implementations (square roots for intersection points, floating-point half-plane clipping), not exact arithmetic; they assume general position (in particular, a point exactly on a disk boundary is treated as not strictly inside by judge A) and record the smallest margin they observed. They are an independent numerical validation, not an exact-arithmetic certificate.
 
 ## Exhaustive cross-check (`scripts/enumerate_check.jl`)
 
@@ -53,7 +53,7 @@ sampling with minimum distance 0.21 (n = 19 to 23), radii from {0.2, 0.4},
 p_k = 0.9, seed 42. All 2^n states are judged by A and B; the enumerated
 reliability is compared with the BDD bounds.
 
-Result (2026-09-21): A and B agree on all 2.55e7 states; the enumerated R
+Result (2026-09-21): A and B agree on all 23,592,960 states (2^23 + 2^22 + 5*2^21 + 2^19); the enumerated R
 equals the BDD value to at most 1.4e-13 on every instance; all BDD runs
 converge. A first attempt with minimum distance 0.28 (n = 11 to 14) gave
 R = 0 on 8 of 10 instances (the disks were too sparse to cover the square)
@@ -66,8 +66,7 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
   julia experiment6/scripts/monte_carlo.jl data/data015-001.json 42 10000000
 ```
 
-Crude Monte Carlo with judge A. Reports the estimate, the 95% confidence
-half-width, the number of failures and the running time for each sample size.
+Crude Monte Carlo with judge A. Reports the estimate, a Wald 95% half-width, the number of failures and the running time for each sample size. For the paper, exact (Clopper-Pearson) intervals were computed from the failure counts with `scripts/clopper_pearson.py`, because the Wald interval is unreliable with few failures.
 
 Result (2026-09-21, N = 1e7, seed 42, `-001` of data015/012/010/008): the BDD
 value lies inside the 95% interval on all four instances. On data008-001
@@ -139,3 +138,21 @@ Executed sequentially on an otherwise idle machine on mains power.
   first 10, data008 first 3), 5.9e8 evaluations; smallest |d^2 - r^2| =
   1.3e-10; the 23 evaluations below 1e-9 were re-decided in exact arithmetic
   with 0 mismatches.
+
+## Reruns prompted by the Codex cross-check (`scripts/run_codex_reruns.sh`, 2026-09-22)
+
+- `experiment4/data/data008-010.json` had `reliability = 0.9` while the other
+  nine depth-limit inputs had 0.5, so the stored depth-10 row could not be
+  reproduced from the inputs. The file was corrected to 0.5 and the whole
+  depth scan was rerun (`experiment4/results_bdd_008.csv`; the previous CSV is
+  kept as `results/experiment4_results_before_rerun.csv`). Bounds for depths
+  1 to 9 are unchanged; depth 10 now gives R = 0.973157 and converges.
+- `scripts/gap_check.jl` evaluates the certified gap Pr(Phi1 and not Phi2)
+  directly as Pr(Phi1 xor Phi2) for the four non-converged experiment2
+  instances, whose stored bounds coincide in double precision
+  (`results/gap_nonconverged.csv`): 7.3e-26 (data010-045), 7.2e-18
+  (data009-032), 7.2e-23 (data008-009), 7.3e-32 (data008-044). The
+  manuscript's earlier "of order 1e-12" statement was not supported by the
+  stored results and has been replaced by these values.
+- `scripts/clopper_pearson.py` computes the exact binomial intervals used in
+  the paper for the Monte Carlo failure counts.

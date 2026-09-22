@@ -120,7 +120,7 @@ results/campus_initial_triangulation.json._meta.mesh_sha256
 | Triangles popped, converged run (`maxLevel = 11`) | 2 214                            |
 | Peak BDD nodes, converged run                     | 17 374                           |
 | **R = R_lower = R_upper at p_k = 0.9**            | **0.44769162907809484**          |
-| Effective number of critical sensors (log R / log p_k) | 7.6280                      |
+| Elasticity d log R / d log p at p = 0.9 (from Birnbaum importances) | 8.2461 (= 7 essential sensors + 1.2461) |
 
 Each row of `campus_bounds.csv` is the terminal state of an independent
 run of Algorithm 2 at a fixed `maxLevel` (driver

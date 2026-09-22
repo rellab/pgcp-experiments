@@ -2,7 +2,7 @@
   "config": "dataconfig/config008.json",
   "gridsize": 4,
   "maxlevel": 10,
-  "reliability": 0.9,
+  "reliability": 0.5,
   "circles": [
     {
       "name": "1",
