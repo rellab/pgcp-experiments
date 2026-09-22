@@ -100,7 +100,8 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
 - Experiment 2 (scalability): [experiment2/README.md](experiment2/README.md)
 - Experiment 3 (variable ordering evaluation): [experiment3/README.md](experiment3/README.md)
 - Experiment 4 (small sample run): [experiment4/run.sh](experiment4/run.sh)
-- Experiment 5 (triangle case study on the Higashi-Hiroshima campus polygon): [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md), [experiment6/README.md](experiment6/README.md) (additional validation for the IEEE TR revision)
+- Experiment 5 (triangle case study on the Higashi-Hiroshima campus polygon): [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
+- Experiment 6 (additional validation for the IEEE TR revision: exhaustive enumeration, Monte Carlo, non-convergent example, ordering, predicate margins): [experiment6/README.md](experiment6/README.md)
 
 ## Repository layout
 
