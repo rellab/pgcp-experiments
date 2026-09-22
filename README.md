@@ -5,10 +5,10 @@ An experiments repository for a BDD-based symbolic reliability solver (computing
 
 - Input data: a set of circles (center, radius) represented as JSON
 - Data generation: circle centers are generated via Poisson Disk Sampling (PDS)
-- BDD solver (rectangle partition): targets the unit square ([0,1]×[0,1]) with adaptive 2×2 grid refinement, computing certified lower/upper bounds from the probabilities of formulas (varphi1/varphi2)
+- BDD solver (rectangle partition): targets the unit square ([0,1]×[0,1]) with adaptive 4×4 grid refinement, computing certified lower/upper bounds from the probabilities of formulas (varphi1/varphi2)
 - BDD solver (triangle partition): targets an arbitrary polygon with a constrained Delaunay triangulation as the initial partition and 1:4 edge-midpoint refinement (added for experiment5)
 - BDD analysis: once a structure-function BDD has converged, [scripts/bdd_analysis.jl](scripts/bdd_analysis.jl) extracts minimal path/cut sets (via `minsol`) and Birnbaum/criticality/structure importance at marginal cost (a MiniCUDD port of the FaultTree.jl analysis layer; used by experiment5)
-- Experiments: see [experiment1/README.md](experiment1/README.md), [experiment2/README.md](experiment2/README.md), [experiment3/README.md](experiment3/README.md), [experiment4/run.sh](experiment4/run.sh), [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
+- Experiments: see [experiment1/README.md](experiment1/README.md), [experiment2/README.md](experiment2/README.md), [experiment3/README.md](experiment3/README.md), [experiment4/run.sh](experiment4/run.sh), [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md), [experiment6/README.md](experiment6/README.md) (additional validation for the IEEE TR revision)
 
 ## Prerequisites
 
@@ -100,7 +100,7 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
 - Experiment 2 (scalability): [experiment2/README.md](experiment2/README.md)
 - Experiment 3 (variable ordering evaluation): [experiment3/README.md](experiment3/README.md)
 - Experiment 4 (small sample run): [experiment4/run.sh](experiment4/run.sh)
-- Experiment 5 (triangle case study on the Higashi-Hiroshima campus polygon): [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md)
+- Experiment 5 (triangle case study on the Higashi-Hiroshima campus polygon): [experiment5/REPRODUCIBILITY.md](experiment5/REPRODUCIBILITY.md), [experiment6/README.md](experiment6/README.md) (additional validation for the IEEE TR revision)
 
 ## Repository layout
 

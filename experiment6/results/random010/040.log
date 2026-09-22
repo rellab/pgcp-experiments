@@ -1,0 +1,83 @@
+[ Info: Processing data/data010-040.json (40/40)
+[ Info:   Sorting with mode: random
+Solving (Level 3, Processed 85 / 384)  22%|███▏          |  ETA: 0:00:29[KSolving (Level 3, Processed 88 / 391)  23%|███▏          |  ETA: 0:00:31[KSolving (Level 3, Processed 92 / 394)  23%|███▎          |  ETA: 0:00:31[KSolving (Level 3, Processed 96 / 402)  24%|███▍          |  ETA: 0:00:33[KSolving (Level 3, Processed 98 / 406)  24%|███▍          |  ETA: 0:00:33[KSolving (Level 3, Processed 100 / 406)  25%|███▎         |  ETA: 0:00:34[KSolving (Level 3, Processed 102 / 409)  25%|███▎         |  ETA: 0:00:35[KSolving (Level 3, Processed 104 / 409)  25%|███▎         |  ETA: 0:00:35[KSolving (Level 3, Processed 105 / 410)  26%|███▍         |  ETA: 0:00:36[KSolving (Level 3, Processed 106 / 420)  25%|███▎         |  ETA: 0:00:40[KSolving (Level 3, Processed 107 / 422)  25%|███▎         |  ETA: 0:00:41[KSolving (Level 3, Processed 109 / 437)  25%|███▎         |  ETA: 0:00:47[KSolving (Level 3, Processed 110 / 445)  25%|███▎         |  ETA: 0:00:50[KSolving (Level 3, Processed 111 / 453)  25%|███▏         |  ETA: 0:00:59[KSolving (Level 3, Processed 112 / 455)  25%|███▎         |  ETA: 0:01:02[KSolving (Level 3, Processed 113 / 460)  25%|███▎         |  ETA: 0:01:04[KSolving (Level 3, Processed 117 / 477)  25%|███▎         |  ETA: 0:01:13[KSolving (Level 3, Processed 118 / 478)  25%|███▎         |  ETA: 0:01:14[KSolving (Level 3, Processed 119 / 481)  25%|███▎         |  ETA: 0:01:14[KSolving (Level 3, Processed 123 / 484)  25%|███▎         |  ETA: 0:01:13[KSolving (Level 3, Processed 125 / 490)  26%|███▍         |  ETA: 0:01:14[KSolving (Level 3, Processed 133 / 502)  26%|███▌         |  ETA: 0:01:12[KSolving (Level 3, Processed 137 / 503)  27%|███▌         |  ETA: 0:01:11[KSolving (Level 3, Processed 139 / 505)  28%|███▋         |  ETA: 0:01:12[KSolving (Level 3, Processed 146 / 523)  28%|███▋         |  ETA: 0:01:14[KSolving (Level 3, Processed 148 / 529)  28%|███▋         |  ETA: 0:01:15[KSolving (Level 3, Processed 149 / 539)  28%|███▋         |  ETA: 0:01:17[KSolving (Level 3, Processed 151 / 542)  28%|███▋         |  ETA: 0:01:21[KSolving (Level 3, Processed 152 / 547)  28%|███▋         |  ETA: 0:01:23[KSolving (Level 3, Processed 154 / 548)  28%|███▋         |  ETA: 0:01:24[KSolving (Level 3, Processed 155 / 549)  28%|███▋         |  ETA: 0:01:26[KSolving (Level 3, Processed 156 / 550)  28%|███▋         |  ETA: 0:01:27[KSolving (Level 3, Processed 158 / 554)  29%|███▊         |  ETA: 0:01:27[KSolving (Level 3, Processed 160 / 554)  29%|███▊         |  ETA: 0:01:27[KSolving (Level 3, Processed 161 / 558)  29%|███▊         |  ETA: 0:01:32[KSolving (Level 3, Processed 162 / 560)  29%|███▊         |  ETA: 0:01:34[KSolving (Level 3, Processed 163 / 561)  29%|███▊         |  ETA: 0:01:34[KSolving (Level 3, Processed 164 / 567)  29%|███▊         |  ETA: 0:01:36[KSolving (Level 3, Processed 165 / 567)  29%|███▊         |  ETA: 0:01:38[KSolving (Level 3, Processed 166 / 569)  29%|███▊         |  ETA: 0:01:38[KSolving (Level 3, Processed 167 / 572)  29%|███▊         |  ETA: 0:01:41[KSolving (Level 3, Processed 168 / 572)  29%|███▉         |  ETA: 0:01:42[KSolving (Level 3, Processed 169 / 572)  30%|███▉         |  ETA: 0:01:43[KSolving (Level 3, Processed 171 / 574)  30%|███▉         |  ETA: 0:01:47[KSolving (Level 3, Processed 172 / 574)  30%|███▉         |  ETA: 0:01:52[KSolving (Level 3, Processed 175 / 576)  30%|████         |  ETA: 0:01:55[KSolving (Level 3, Processed 176 / 576)  31%|████         |  ETA: 0:01:56[KSolving (Level 3, Processed 179 / 576)  31%|████         |  ETA: 0:01:55[KSolving (Level 3, Processed 180 / 576)  31%|████         |  ETA: 0:01:55[KSolving (Level 4, Processed 181 / 576)  31%|████▏        |  ETA: 0:01:56[KSolving (Level 4, Processed 182 / 577)  32%|████▏        |  ETA: 0:01:57[KSolving (Level 4, Processed 183 / 582)  31%|████▏        |  ETA: 0:02:00[KSolving (Level 4, Processed 184 / 587)  31%|████▏        |  ETA: 0:02:06[KSolving (Level 4, Processed 185 / 587)  32%|████▏        |  ETA: 0:02:06[KSolving (Level 4, Processed 187 / 587)  32%|████▏        |  ETA: 0:02:05[KSolving (Level 4, Processed 192 / 587)  33%|████▎        |  ETA: 0:02:01[KSolving (Level 4, Processed 202 / 591)  34%|████▌        |  ETA: 0:01:58[KSolving (Level 4, Processed 212 / 599)  35%|████▋        |  ETA: 0:01:54[KSolving (Level 4, Processed 220 / 611)  36%|████▋        |  ETA: 0:01:52[KSolving (Level 4, Processed 228 / 612)  37%|████▉        |  ETA: 0:01:48[KSolving (Level 4, Processed 231 / 612)  38%|████▉        |  ETA: 0:01:46[KSolving (Level 4, Processed 251 / 618)  41%|█████▎       |  ETA: 0:01:38[KSolving (Level 4, Processed 253 / 621)  41%|█████▎       |  ETA: 0:01:38[KSolving (Level 4, Processed 263 / 632)  42%|█████▍       |  ETA: 0:01:37[KSolving (Level 4, Processed 266 / 633)  42%|█████▌       |  ETA: 0:01:36[KSolving (Level 4, Processed 267 / 634)  42%|█████▌       |  ETA: 0:01:37[KSolving (Level 4, Processed 277 / 639)  43%|█████▋       |  ETA: 0:01:34[KSolving (Level 4, Processed 279 / 639)  44%|█████▋       |  ETA: 0:01:33[KSolving (Level 4, Processed 281 / 639)  44%|█████▊       |  ETA: 0:01:33[KSolving (Level 4, Processed 283 / 644)  44%|█████▊       |  ETA: 0:01:34[KSolving (Level 4, Processed 286 / 648)  44%|█████▊       |  ETA: 0:01:33[KSolving (Level 4, Processed 291 / 651)  45%|█████▊       |  ETA: 0:01:32[KSolving (Level 4, Processed 293 / 653)  45%|█████▉       |  ETA: 0:01:32[KSolving (Level 4, Processed 299 / 658)  45%|█████▉       |  ETA: 0:01:32[KSolving (Level 4, Processed 301 / 658)  46%|██████       |  ETA: 0:01:31[KSolving (Level 4, Processed 303 / 660)  46%|██████       |  ETA: 0:01:31[KSolving (Level 4, Processed 305 / 660)  46%|██████       |  ETA: 0:01:31[KSolving (Level 4, Processed 307 / 660)  47%|██████       |  ETA: 0:01:30[KSolving (Level 4, Processed 311 / 660)  47%|██████▏      |  ETA: 0:01:28[KSolving (Level 4, Processed 313 / 661)  47%|██████▏      |  ETA: 0:01:28[KSolving (Level 4, Processed 314 / 662)  47%|██████▏      |  ETA: 0:01:28[KSolving (Level 4, Processed 317 / 662)  48%|██████▎      |  ETA: 0:01:27[KSolving (Level 4, Processed 319 / 662)  48%|██████▎      |  ETA: 0:01:27[KSolving (Level 4, Processed 323 / 662)  49%|██████▍      |  ETA: 0:01:26[KSolving (Level 4, Processed 325 / 667)  49%|██████▍      |  ETA: 0:01:26[KSolving (Level 4, Processed 332 / 673)  49%|██████▍      |  ETA: 0:01:25[KSolving (Level 4, Processed 335 / 676)  50%|██████▌      |  ETA: 0:01:25[KSolving (Level 4, Processed 337 / 676)  50%|██████▌      |  ETA: 0:01:25[KSolving (Level 4, Processed 340 / 681)  50%|██████▌      |  ETA: 0:01:25[KSolving (Level 4, Processed 360 / 698)  52%|██████▊      |  ETA: 0:01:29[KSolving (Level 4, Processed 364 / 703)  52%|██████▊      |  ETA: 0:01:29[KSolving (Level 4, Processed 366 / 703)  52%|██████▊      |  ETA: 0:01:28[KSolving (Level 4, Processed 368 / 705)  52%|██████▊      |  ETA: 0:01:28[KSolving (Level 4, Processed 373 / 713)  52%|██████▊      |  ETA: 0:01:28[KSolving (Level 4, Processed 381 / 713)  53%|███████      |  ETA: 0:01:25[KSolving (Level 4, Processed 385 / 713)  54%|███████      |  ETA: 0:01:24[KSolving (Level 4, Processed 395 / 717)  55%|███████▏     |  ETA: 0:01:21[KSolving (Level 4, Processed 399 / 718)  56%|███████▎     |  ETA: 0:01:20[KSolving (Level 4, Processed 419 / 727)  58%|███████▌     |  ETA: 0:01:16[KSolving (Level 4, Processed 423 / 728)  58%|███████▌     |  ETA: 0:01:15[KSolving (Level 4, Processed 429 / 729)  59%|███████▋     |  ETA: 0:01:13[KSolving (Level 4, Processed 431 / 732)  59%|███████▋     |  ETA: 0:01:13[KSolving (Level 4, Processed 433 / 736)  59%|███████▋     |  ETA: 0:01:14[KSolving (Level 4, Processed 434 / 737)  59%|███████▋     |  ETA: 0:01:14[KSolving (Level 4, Processed 435 / 739)  59%|███████▋     |  ETA: 0:01:14[KSolving (Level 4, Processed 437 / 740)  59%|███████▋     |  ETA: 0:01:14[KSolving (Level 4, Processed 439 / 740)  59%|███████▊     |  ETA: 0:01:14[KSolving (Level 4, Processed 441 / 742)  59%|███████▊     |  ETA: 0:01:14[KSolving (Level 4, Processed 451 / 753)  60%|███████▊     |  ETA: 0:01:16[KSolving (Level 4, Processed 454 / 753)  60%|███████▉     |  ETA: 0:01:15[KSolving (Level 4, Processed 455 / 754)  60%|███████▉     |  ETA: 0:01:16[KSolving (Level 4, Processed 456 / 754)  60%|███████▉     |  ETA: 0:01:16[K
+[7] signal (15): Terminated
+in expression starting at /work/scripts/run_bdd_batch.jl:127
+cuddUniqueInter at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+cuddBddAndRecur at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+Cudd_bddAnd at /root/.julia/packages/MiniCUDD/hkZ0T/deps/usr/lib/libcudd.so (unknown line)
+bdd_and at /root/.julia/packages/MiniCUDD/hkZ0T/src/MiniCUDD.jl:182 [inlined]
+bdd_and at /work/scripts/bdd_solver.jl:81
+#bddsolver#4 at /work/scripts/bdd_solver.jl:221
+bddsolver at /work/scripts/bdd_solver.jl:151
+unknown function (ip: 0xffff74ac4107)
+_jl_invoke at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:2897 [inlined]
+ijl_apply_generic at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:3079
+macro expansion at /work/scripts/run_bdd_batch.jl:36 [inlined]
+macro expansion at ./timing.jl:395 [inlined]
+#run_bdd_case#1 at /work/scripts/run_bdd_batch.jl:35
+run_bdd_case at /work/scripts/run_bdd_batch.jl:19 [inlined]
+main at /work/scripts/run_bdd_batch.jl:109
+unknown function (ip: 0xffff75f144f3)
+_jl_invoke at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:2897 [inlined]
+ijl_apply_generic at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:3079
+jl_apply at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/interpreter.c:635
+jl_interpret_toplevel_thunk at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+include_string at ./loading.jl:2160
+_jl_invoke at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:2897 [inlined]
+ijl_apply_generic at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:3079
+_include at ./loading.jl:2220
+include at ./Base.jl:495
+jfptr_include_46583 at /usr/local/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:2897 [inlined]
+ijl_apply_generic at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:3079
+exec_options at ./client.jl:316
+_start at ./client.jl:550
+jfptr__start_83189 at /usr/local/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:2897 [inlined]
+ijl_apply_generic at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/gf.c:3079
+jl_apply at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/default-armageddon-4/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+unknown function (ip: 0xffff9a19225b)
+unknown function (ip: 0xffff9a19225b)
+unknown function (ip: (nil))
+Allocations: 36501029 (Pool: 36489173; Big: 11856); GC: 28
