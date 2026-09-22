@@ -1,0 +1,4 @@
+datafile,n,evaluations,checked_exact,mismatches,min_abs_margin,min_rel_margin,converged
+data/data008-001.json,98,11176704,0,0,3.008573e-09,7.521433e-08,true
+data/data008-002.json,109,17467904,0,0,2.524957e-09,1.578098e-08,true
+data/data008-003.json,104,14776320,0,0,2.659729e-09,1.662331e-08,true

@@ -1,0 +1,2 @@
+datafile,sortmode,circles,convergence,level,nodes_phi1,nodes_phi2,peak_nodes,total_nodes,memory_mb,solve_time_sec,prob_time_varphi2_sec,prob_time_varphi1_sec,reliability_lb,reliability_ub
+data/data012-001.json,angles_from_center,50,true,8,8603,8603,170674,11704,15.732795715332031,1.081274583,0.038851459,0.000921666,0.9976788691420294,0.9976788691420294

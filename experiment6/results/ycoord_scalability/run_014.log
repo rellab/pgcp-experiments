@@ -1,0 +1,151 @@
+[ Info: Processing data/data014-001.json (1/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 499/499, Time: 0.658863833 sec
+[ Info: Processing data/data014-002.json (2/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 40, Nodes: 561/561, Time: 0.126135292 sec
+[ Info: Processing data/data014-003.json (3/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 39, Nodes: 1014/1014, Time: 0.126255542 sec
+[ Info: Processing data/data014-004.json (4/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 637/637, Time: 0.112095125 sec
+[ Info: Processing data/data014-005.json (5/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 36, Nodes: 624/624, Time: 0.076905667 sec
+[ Info: Processing data/data014-006.json (6/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 1044/1044, Time: 0.128508917 sec
+[ Info: Processing data/data014-007.json (7/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 32, Nodes: 373/373, Time: 0.049740125 sec
+[ Info: Processing data/data014-008.json (8/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 641/641, Time: 0.11905625 sec
+[ Info: Processing data/data014-009.json (9/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 725/725, Time: 0.089913375 sec
+[ Info: Processing data/data014-010.json (10/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 40, Nodes: 1790/1790, Time: 0.189336458 sec
+[ Info: Processing data/data014-011.json (11/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 783/783, Time: 0.140904208 sec
+[ Info: Processing data/data014-012.json (12/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 39, Nodes: 1253/1253, Time: 0.12628275 sec
+[ Info: Processing data/data014-013.json (13/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 39, Nodes: 1589/1589, Time: 0.12917925 sec
+[ Info: Processing data/data014-014.json (14/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 737/737, Time: 0.102465292 sec
+[ Info: Processing data/data014-015.json (15/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 36, Nodes: 442/442, Time: 0.085271375 sec
+[ Info: Processing data/data014-016.json (16/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 386/386, Time: 0.066893667 sec
+[ Info: Processing data/data014-017.json (17/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 958/958, Time: 0.166866333 sec
+[ Info: Processing data/data014-018.json (18/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 581/581, Time: 0.066340167 sec
+[ Info: Processing data/data014-019.json (19/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 36, Nodes: 351/351, Time: 0.0752285 sec
+[ Info: Processing data/data014-020.json (20/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 752/752, Time: 0.129166584 sec
+[ Info: Processing data/data014-021.json (21/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 1657/1657, Time: 0.112735541 sec
+[ Info: Processing data/data014-022.json (22/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 1294/1294, Time: 0.155536 sec
+[ Info: Processing data/data014-023.json (23/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 737/737, Time: 0.111296708 sec
+[ Info: Processing data/data014-024.json (24/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 474/474, Time: 0.092042959 sec
+[ Info: Processing data/data014-025.json (25/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 1067/1067, Time: 0.126356125 sec
+[ Info: Processing data/data014-026.json (26/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 39, Nodes: 1781/1781, Time: 0.132586041 sec
+[ Info: Processing data/data014-027.json (27/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 590/590, Time: 0.062585875 sec
+[ Info: Processing data/data014-028.json (28/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 853/853, Time: 0.112747792 sec
+[ Info: Processing data/data014-029.json (29/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 39, Nodes: 2200/2200, Time: 0.160178416 sec
+[ Info: Processing data/data014-030.json (30/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 694/694, Time: 0.091243208 sec
+[ Info: Processing data/data014-031.json (31/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 587/587, Time: 0.096395583 sec
+[ Info: Processing data/data014-032.json (32/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 570/570, Time: 0.105736041 sec
+[ Info: Processing data/data014-033.json (33/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 313/313, Time: 0.069183208 sec
+[ Info: Processing data/data014-034.json (34/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 35, Nodes: 556/556, Time: 0.085236916 sec
+[ Info: Processing data/data014-035.json (35/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 293/293, Time: 0.090008291 sec
+[ Info: Processing data/data014-036.json (36/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 717/717, Time: 0.098940417 sec
+[ Info: Processing data/data014-037.json (37/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 40, Nodes: 870/870, Time: 0.134315209 sec
+[ Info: Processing data/data014-038.json (38/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 34, Nodes: 671/671, Time: 0.061929875 sec
+[ Info: Processing data/data014-039.json (39/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 949/949, Time: 0.135973625 sec
+[ Info: Processing data/data014-040.json (40/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 33, Nodes: 331/331, Time: 0.062062792 sec
+[ Info: Processing data/data014-041.json (41/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 789/789, Time: 0.104795375 sec
+[ Info: Processing data/data014-042.json (42/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 982/982, Time: 0.10997725 sec
+[ Info: Processing data/data014-043.json (43/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 36, Nodes: 940/940, Time: 0.126752542 sec
+[ Info: Processing data/data014-044.json (44/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 980/980, Time: 0.098722167 sec
+[ Info: Processing data/data014-045.json (45/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 1348/1348, Time: 0.154387375 sec
+[ Info: Processing data/data014-046.json (46/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 34, Nodes: 345/345, Time: 0.047196875 sec
+[ Info: Processing data/data014-047.json (47/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 36, Nodes: 1550/1550, Time: 0.183256458 sec
+[ Info: Processing data/data014-048.json (48/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 948/948, Time: 0.129653416 sec
+[ Info: Processing data/data014-049.json (49/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 38, Nodes: 619/619, Time: 0.056891334 sec
+[ Info: Processing data/data014-050.json (50/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 37, Nodes: 578/578, Time: 0.084885459 sec
+[ Info: Wrote 50 results to experiment6/results/ycoord_scalability/results_bdd_014_ycoordinate.csv

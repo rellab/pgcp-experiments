@@ -122,9 +122,20 @@ arithmetic and records the smallest double-precision margin |d^2 - r^2|.
 Result: 704,052 evaluations at maxLevel = 11, 0 mismatches between double
 precision and exact arithmetic, smallest margin 2.13e-7.
 
-## Not yet run
+## Timing-bearing runs (`scripts/run_mains.sh`, 2026-09-22)
 
-- The same margin measurement for the unit-square solver (experiment2).
-- Section V-C rerun with the recommended y-coordinate ordering (the published
-  scalability runs used `angles_from_center`).
-- Re-timing of Monte Carlo and BDD on the same idle machine.
+Executed sequentially on an otherwise idle machine on mains power.
+
+- `results/timing/`: Monte Carlo (N = 1e7, seed 42) and the BDD run back to
+  back on data015/012/010/008-001. MC: 4.6, 10.1, 17.5, 41.2 s; BDD: 0.65,
+  1.08, 2.09, 54.3 s.
+- `results/ycoord_scalability/`: data015 to data010, 50 instances each, with
+  the y-coordinate ordering (the published experiment2 runs used
+  `angles_from_center`). Median times differ from experiment2 by at most 15%
+  in either direction, peak nodes by at most 12%, the same 299 of 300
+  instances converge, and R agrees to 1e-15.
+- `results/margin/` (`scripts/check_margin_rect.jl`): predicate margins for the
+  unit-square solver on 313 instances (data015 to data010 fully, data009
+  first 10, data008 first 3), 5.9e8 evaluations; smallest |d^2 - r^2| =
+  1.3e-10; the 23 evaluations below 1e-9 were re-decided in exact arithmetic
+  with 0 mismatches.

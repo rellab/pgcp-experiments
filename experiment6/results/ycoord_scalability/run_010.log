@@ -1,0 +1,201 @@
+[ Info: Processing data/data010-001.json (1/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 185 / 570)  32%|████▎        |  ETA: 0:00:01[KSolving (Level 4, Processed 411 / 714)  58%|███████▌     |  ETA: 0:00:01[KSolving (Level 5, Processed 637 / 822)  77%|██████████▏  |  ETA: 0:00:00[KSolving (Level 6, Processed 833 / 888)  94%|████████████▎|  ETA: 0:00:00[KSolving (Level 9, Processed 900 / 900) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 34924/34924, Time: 2.254820126 sec
+[ Info: Processing data/data010-002.json (2/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 212 / 518)  41%|█████▍       |  ETA: 0:00:01[KSolving (Level 4, Processed 386 / 622)  62%|████████▏    |  ETA: 0:00:00[KSolving (Level 5, Processed 557 / 688)  81%|██████████▌  |  ETA: 0:00:00[KSolving (Level 9, Processed 735 / 735) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 29102/29102, Time: 1.352077834 sec
+[ Info: Processing data/data010-003.json (3/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 291 / 650)  45%|█████▉       |  ETA: 0:00:01[KSolving (Level 4, Processed 464 / 738)  63%|████████▏    |  ETA: 0:00:00[KSolving (Level 5, Processed 636 / 774)  82%|██████████▋  |  ETA: 0:00:00[KSolving (Level 6, Processed 768 / 816)  94%|████████████▎|  ETA: 0:00:00[KSolving (Level 10, Processed 837 / 837) 100%|████████████| Time: 0:00:01[K
+[ Info:     Circles: 66, Nodes: 36455/36455, Time: 1.636550001 sec
+[ Info: Processing data/data010-004.json (4/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 133 / 528)  25%|███▎         |  ETA: 0:00:01[KSolving (Level 4, Processed 234 / 667)  35%|████▌        |  ETA: 0:00:02[KSolving (Level 4, Processed 361 / 750)  48%|██████▎      |  ETA: 0:00:02[KSolving (Level 4, Processed 461 / 837)  55%|███████▏     |  ETA: 0:00:02[KSolving (Level 4, Processed 547 / 877)  62%|████████▏    |  ETA: 0:00:02[KSolving (Level 4, Processed 593 / 902)  66%|████████▌    |  ETA: 0:00:02[KSolving (Level 5, Processed 700 / 963)  73%|█████████▌   |  ETA: 0:00:02[KSolving (Level 5, Processed 810 / 998)  81%|██████████▌  |  ETA: 0:00:01[KSolving (Level 5, Processed 923 / 1025)  90%|██████████▊ |  ETA: 0:00:01[KSolving (Level 8, Processed 1067 / 1067) 100%|███████████| Time: 0:00:05[K
+[ Info:     Circles: 71, Nodes: 57874/57874, Time: 5.018165961 sec
+[ Info: Processing data/data010-005.json (5/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 174 / 618)  28%|███▋         |  ETA: 0:00:02[KSolving (Level 4, Processed 314 / 728)  43%|█████▋       |  ETA: 0:00:01[KSolving (Level 4, Processed 452 / 795)  57%|███████▍     |  ETA: 0:00:01[KSolving (Level 4, Processed 560 / 928)  60%|███████▉     |  ETA: 0:00:01[KSolving (Level 5, Processed 630 / 946)  67%|████████▋    |  ETA: 0:00:01[KSolving (Level 5, Processed 785 / 1029)  76%|█████████▏  |  ETA: 0:00:01[KSolving (Level 6, Processed 1036 / 1134)  91%|██████████ |  ETA: 0:00:00[KSolving (Level 8, Processed 1187 / 1187) 100%|███████████| Time: 0:00:03[K
+[ Info:     Circles: 72, Nodes: 35117/35117, Time: 3.416381251 sec
+[ Info: Processing data/data010-006.json (6/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 135 / 587)  23%|███          |  ETA: 0:00:02[KSolving (Level 4, Processed 206 / 652)  32%|████▏        |  ETA: 0:00:02[KSolving (Level 4, Processed 367 / 795)  46%|██████       |  ETA: 0:00:02[KSolving (Level 4, Processed 514 / 940)  55%|███████▏     |  ETA: 0:00:02[KSolving (Level 4, Processed 590 / 995)  59%|███████▊     |  ETA: 0:00:02[KSolving (Level 4, Processed 642 / 1005)  64%|███████▋    |  ETA: 0:00:02[KSolving (Level 5, Processed 797 / 1064)  75%|█████████   |  ETA: 0:00:01[KSolving (Level 5, Processed 945 / 1108)  85%|██████████▎ |  ETA: 0:00:01[KSolving (Level 6, Processed 1077 / 1147)  94%|██████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 1155 / 1155) 100%|███████████| Time: 0:00:04[K
+[ Info:     Circles: 72, Nodes: 61355/61355, Time: 4.156774919 sec
+[ Info: Processing data/data010-007.json (7/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 128 / 485)  26%|███▍         |  ETA: 0:00:01[KSolving (Level 4, Processed 246 / 632)  39%|█████        |  ETA: 0:00:01[KSolving (Level 4, Processed 456 / 765)  60%|███████▊     |  ETA: 0:00:01[KSolving (Level 4, Processed 564 / 821)  69%|████████▉    |  ETA: 0:00:01[KSolving (Level 5, Processed 721 / 876)  82%|██████████▊  |  ETA: 0:00:01[KSolving (Level 6, Processed 833 / 924)  90%|███████████▊ |  ETA: 0:00:00[KSolving (Level 9, Processed 969 / 969) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 70, Nodes: 41671/41671, Time: 2.925891542 sec
+[ Info: Processing data/data010-008.json (8/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 163 / 591)  28%|███▋         |  ETA: 0:00:02[KSolving (Level 4, Processed 278 / 690)  40%|█████▎       |  ETA: 0:00:01[KSolving (Level 4, Processed 389 / 791)  49%|██████▍      |  ETA: 0:00:01[KSolving (Level 4, Processed 511 / 860)  59%|███████▊     |  ETA: 0:00:01[KSolving (Level 4, Processed 595 / 897)  66%|████████▋    |  ETA: 0:00:01[KSolving (Level 5, Processed 691 / 932)  74%|█████████▋   |  ETA: 0:00:01[KSolving (Level 5, Processed 816 / 980)  83%|██████████▉  |  ETA: 0:00:01[KSolving (Level 6, Processed 947 / 1002)  95%|███████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 1006 / 1006) 100%|███████████| Time: 0:00:03[K
+[ Info:     Circles: 69, Nodes: 47782/47782, Time: 3.223362752 sec
+[ Info: Processing data/data010-009.json (9/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 220 / 543)  41%|█████▎       |  ETA: 0:00:01[KSolving (Level 4, Processed 404 / 644)  63%|████████▏    |  ETA: 0:00:00[KSolving (Level 5, Processed 645 / 735)  88%|███████████▍ |  ETA: 0:00:00[KSolving (Level 8, Processed 779 / 779) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 64, Nodes: 18827/18827, Time: 1.214096167 sec
+[ Info: Processing data/data010-010.json (10/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 106 / 380)  28%|███▋         |  ETA: 0:00:01[KSolving (Level 4, Processed 211 / 559)  38%|████▉        |  ETA: 0:00:01[KSolving (Level 4, Processed 337 / 657)  51%|██████▋      |  ETA: 0:00:01[KSolving (Level 4, Processed 467 / 736)  63%|████████▎    |  ETA: 0:00:01[KSolving (Level 5, Processed 611 / 778)  79%|██████████▎  |  ETA: 0:00:00[KSolving (Level 5, Processed 754 / 823)  92%|███████████▉ |  ETA: 0:00:00[KSolving (Level 8, Processed 840 / 840) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 69, Nodes: 31186/31186, Time: 2.456541627 sec
+[ Info: Processing data/data010-011.json (11/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 136 / 527)  26%|███▍         |  ETA: 0:00:02[KSolving (Level 4, Processed 206 / 607)  34%|████▍        |  ETA: 0:00:03[KSolving (Level 4, Processed 403 / 703)  57%|███████▌     |  ETA: 0:00:02[KSolving (Level 4, Processed 506 / 794)  64%|████████▎    |  ETA: 0:00:01[KSolving (Level 4, Processed 588 / 844)  70%|█████████    |  ETA: 0:00:01[KSolving (Level 5, Processed 682 / 893)  76%|█████████▉   |  ETA: 0:00:01[KSolving (Level 5, Processed 767 / 920)  83%|██████████▉  |  ETA: 0:00:01[KSolving (Level 6, Processed 850 / 947)  90%|███████████▋ |  ETA: 0:00:00[KSolving (Level 6, Processed 944 / 978)  97%|████████████▌|  ETA: 0:00:00[KSolving (Level 9, Processed 989 / 989) 100%|█████████████| Time: 0:00:04[K
+[ Info:     Circles: 70, Nodes: 57001/57001, Time: 4.788371336 sec
+[ Info: Processing data/data010-012.json (12/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 125 / 489)  26%|███▍         |  ETA: 0:00:01[KSolving (Level 4, Processed 246 / 665)  37%|████▊        |  ETA: 0:00:02[KSolving (Level 4, Processed 442 / 766)  58%|███████▌     |  ETA: 0:00:01[KSolving (Level 4, Processed 527 / 815)  65%|████████▍    |  ETA: 0:00:01[KSolving (Level 4, Processed 584 / 849)  69%|█████████    |  ETA: 0:00:01[KSolving (Level 5, Processed 716 / 906)  79%|██████████▎  |  ETA: 0:00:01[KSolving (Level 5, Processed 839 / 952)  88%|███████████▌ |  ETA: 0:00:01[KSolving (Level 7, Processed 982 / 982) 100%|█████████████| Time: 0:00:04[K
+[ Info:     Circles: 73, Nodes: 57087/57087, Time: 4.123298294 sec
+[ Info: Processing data/data010-013.json (13/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 217 / 667)  33%|████▎        |  ETA: 0:00:02[KSolving (Level 4, Processed 385 / 815)  47%|██████▏      |  ETA: 0:00:02[KSolving (Level 4, Processed 481 / 901)  53%|███████      |  ETA: 0:00:02[KSolving (Level 4, Processed 561 / 962)  58%|███████▋     |  ETA: 0:00:01[KSolving (Level 4, Processed 639 / 1008)  63%|███████▋    |  ETA: 0:00:02[KSolving (Level 5, Processed 770 / 1030)  75%|█████████   |  ETA: 0:00:01[KSolving (Level 5, Processed 903 / 1064)  85%|██████████▏ |  ETA: 0:00:01[KSolving (Level 6, Processed 1033 / 1096)  94%|██████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 1105 / 1105) 100%|███████████| Time: 0:00:03[K
+[ Info:     Circles: 71, Nodes: 44640/44640, Time: 3.826724252 sec
+[ Info: Processing data/data010-014.json (14/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 171 / 545)  31%|████▏        |  ETA: 0:00:01[KSolving (Level 4, Processed 262 / 606)  43%|█████▋       |  ETA: 0:00:01[KSolving (Level 4, Processed 445 / 709)  63%|████████▏    |  ETA: 0:00:01[KSolving (Level 5, Processed 597 / 805)  74%|█████████▋   |  ETA: 0:00:01[KSolving (Level 5, Processed 766 / 845)  91%|███████████▊ |  ETA: 0:00:00[KSolving (Level 8, Processed 871 / 871) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 70, Nodes: 34089/34089, Time: 2.249588001 sec
+[ Info: Processing data/data010-015.json (15/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 177 / 464)  38%|█████        |  ETA: 0:00:01[KSolving (Level 4, Processed 337 / 579)  58%|███████▋     |  ETA: 0:00:00[KSolving (Level 5, Processed 585 / 677)  86%|███████████▎ |  ETA: 0:00:00[KSolving (Level 8, Processed 733 / 733) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 21310/21310, Time: 1.09039175 sec
+[ Info: Processing data/data010-016.json (16/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 223 / 545)  41%|█████▍       |  ETA: 0:00:01[KSolving (Level 4, Processed 393 / 682)  58%|███████▌     |  ETA: 0:00:01[KSolving (Level 5, Processed 563 / 778)  72%|█████████▍   |  ETA: 0:00:01[KSolving (Level 5, Processed 702 / 834)  84%|███████████  |  ETA: 0:00:00[KSolving (Level 6, Processed 827 / 859)  96%|████████████▌|  ETA: 0:00:00[KSolving (Level 8, Processed 861 / 861) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 68, Nodes: 42570/42570, Time: 2.315210835 sec
+[ Info: Processing data/data010-017.json (17/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 101 / 368)  27%|███▋         |  ETA: 0:00:01[KSolving (Level 3, Processed 177 / 592)  30%|███▉         |  ETA: 0:00:02[KSolving (Level 4, Processed 332 / 675)  49%|██████▍      |  ETA: 0:00:01[KSolving (Level 4, Processed 462 / 748)  62%|████████     |  ETA: 0:00:01[KSolving (Level 4, Processed 580 / 814)  71%|█████████▎   |  ETA: 0:00:01[KSolving (Level 5, Processed 697 / 864)  81%|██████████▌  |  ETA: 0:00:01[KSolving (Level 5, Processed 800 / 903)  89%|███████████▌ |  ETA: 0:00:00[KSolving (Level 9, Processed 928 / 928) 100%|█████████████| Time: 0:00:03[K
+[ Info:     Circles: 69, Nodes: 38784/38784, Time: 3.115056502 sec
+[ Info: Processing data/data010-018.json (18/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 140 / 498)  28%|███▋         |  ETA: 0:00:01[KSolving (Level 4, Processed 338 / 625)  54%|███████      |  ETA: 0:00:01[KSolving (Level 5, Processed 522 / 733)  71%|█████████▎   |  ETA: 0:00:00[KSolving (Level 6, Processed 740 / 818)  90%|███████████▊ |  ETA: 0:00:00[KSolving (Level 7, Processed 823 / 823) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 64, Nodes: 19246/19246, Time: 1.431203375 sec
+[ Info: Processing data/data010-019.json (19/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 101 / 429)  24%|███          |  ETA: 0:00:01[KSolving (Level 3, Processed 176 / 653)  27%|███▌         |  ETA: 0:00:04[KSolving (Level 4, Processed 355 / 769)  46%|██████       |  ETA: 0:00:02[KSolving (Level 4, Processed 505 / 850)  59%|███████▊     |  ETA: 0:00:02[KSolving (Level 4, Processed 604 / 930)  65%|████████▌    |  ETA: 0:00:02[KSolving (Level 5, Processed 669 / 940)  71%|█████████▎   |  ETA: 0:00:01[KSolving (Level 5, Processed 894 / 996)  90%|███████████▋ |  ETA: 0:00:00[KSolving (Level 7, Processed 1016 / 1016) 100%|███████████| Time: 0:00:04[K
+[ Info:     Circles: 70, Nodes: 31471/31471, Time: 4.11546296 sec
+[ Info: Processing data/data010-020.json (20/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 101 / 433)  23%|███          |  ETA: 0:00:02[KSolving (Level 3, Processed 150 / 607)  25%|███▎         |  ETA: 0:00:05[KSolving (Level 3, Processed 166 / 612)  27%|███▌         |  ETA: 0:00:05[KSolving (Level 4, Processed 195 / 639)  31%|████         |  ETA: 0:00:06[KSolving (Level 4, Processed 355 / 738)  48%|██████▎      |  ETA: 0:00:03[KSolving (Level 4, Processed 472 / 847)  56%|███████▎     |  ETA: 0:00:03[KSolving (Level 4, Processed 626 / 916)  68%|████████▉    |  ETA: 0:00:02[KSolving (Level 5, Processed 690 / 936)  74%|█████████▋   |  ETA: 0:00:02[KSolving (Level 5, Processed 815 / 976)  84%|██████████▉  |  ETA: 0:00:01[KSolving (Level 6, Processed 936 / 1028)  91%|██████████▉ |  ETA: 0:00:01[KSolving (Level 6, Processed 986 / 1042)  95%|███████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 1050 / 1050) 100%|███████████| Time: 0:00:07[K
+[ Info:     Circles: 71, Nodes: 76205/76205, Time: 7.212379837 sec
+[ Info: Processing data/data010-021.json (21/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 205 / 527)  39%|█████        |  ETA: 0:00:01[KSolving (Level 4, Processed 413 / 681)  61%|███████▉     |  ETA: 0:00:00[KSolving (Level 5, Processed 617 / 776)  80%|██████████▍  |  ETA: 0:00:00[KSolving (Level 9, Processed 819 / 819) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 66, Nodes: 25555/25555, Time: 1.337106501 sec
+[ Info: Processing data/data010-022.json (22/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 128 / 504)  25%|███▎         |  ETA: 0:00:01[KSolving (Level 4, Processed 205 / 585)  35%|████▌        |  ETA: 0:00:02[KSolving (Level 4, Processed 373 / 694)  54%|███████      |  ETA: 0:00:01[KSolving (Level 4, Processed 500 / 770)  65%|████████▌    |  ETA: 0:00:01[KSolving (Level 5, Processed 621 / 813)  76%|█████████▉   |  ETA: 0:00:01[KSolving (Level 5, Processed 762 / 856)  89%|███████████▋ |  ETA: 0:00:00[KSolving (Level 7, Processed 892 / 898)  99%|████████████▉|  ETA: 0:00:00[KSolving (Level 7, Processed 898 / 898) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 70, Nodes: 40067/40067, Time: 2.859414084 sec
+[ Info: Processing data/data010-023.json (23/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 147 / 535)  27%|███▋         |  ETA: 0:00:01[KSolving (Level 4, Processed 307 / 645)  48%|██████▎      |  ETA: 0:00:01[KSolving (Level 4, Processed 455 / 749)  61%|███████▉     |  ETA: 0:00:01[KSolving (Level 4, Processed 587 / 851)  69%|█████████    |  ETA: 0:00:01[KSolving (Level 5, Processed 754 / 919)  82%|██████████▋  |  ETA: 0:00:00[KSolving (Level 7, Processed 955 / 965)  99%|████████████▉|  ETA: 0:00:00[KSolving (Level 8, Processed 965 / 965) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 71, Nodes: 33376/33376, Time: 2.19350671 sec
+[ Info: Processing data/data010-024.json (24/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 205 / 512)  40%|█████▎       |  ETA: 0:00:01[KSolving (Level 4, Processed 367 / 585)  63%|████████▏    |  ETA: 0:00:00[KSolving (Level 5, Processed 526 / 674)  78%|██████████▏  |  ETA: 0:00:00[KSolving (Level 7, Processed 721 / 726)  99%|████████████▉|  ETA: 0:00:00[KSolving (Level 8, Processed 726 / 726) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 66, Nodes: 38275/38275, Time: 1.331023043 sec
+[ Info: Processing data/data010-025.json (25/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 242 / 620)  39%|█████▏       |  ETA: 0:00:01[KSolving (Level 4, Processed 451 / 787)  57%|███████▌     |  ETA: 0:00:01[KSolving (Level 5, Processed 657 / 853)  77%|██████████   |  ETA: 0:00:00[KSolving (Level 6, Processed 884 / 910)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 7, Processed 910 / 910) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 68, Nodes: 36402/36402, Time: 1.411995501 sec
+[ Info: Processing data/data010-026.json (26/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 154 / 594)  26%|███▍         |  ETA: 0:00:02[KSolving (Level 4, Processed 222 / 674)  33%|████▎        |  ETA: 0:00:02[KSolving (Level 4, Processed 383 / 802)  48%|██████▎      |  ETA: 0:00:02[KSolving (Level 4, Processed 515 / 878)  59%|███████▋     |  ETA: 0:00:01[KSolving (Level 4, Processed 589 / 910)  65%|████████▍    |  ETA: 0:00:01[KSolving (Level 5, Processed 682 / 958)  71%|█████████▎   |  ETA: 0:00:01[KSolving (Level 6, Processed 940 / 1042)  90%|██████████▉ |  ETA: 0:00:00[KSolving (Level 7, Processed 1062 / 1083)  98%|██████████▊|  ETA: 0:00:00[KSolving (Level 9, Processed 1092 / 1092) 100%|███████████| Time: 0:00:03[K
+[ Info:     Circles: 72, Nodes: 56310/56310, Time: 3.97330571 sec
+[ Info: Processing data/data010-027.json (27/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 204 / 605)  34%|████▍        |  ETA: 0:00:02[KSolving (Level 4, Processed 480 / 768)  62%|████████▏    |  ETA: 0:00:01[KSolving (Level 4, Processed 558 / 839)  67%|████████▋    |  ETA: 0:00:01[KSolving (Level 5, Processed 664 / 885)  75%|█████████▊   |  ETA: 0:00:01[KSolving (Level 5, Processed 767 / 912)  84%|██████████▉  |  ETA: 0:00:01[KSolving (Level 5, Processed 864 / 937)  92%|████████████ |  ETA: 0:00:00[KSolving (Level 9, Processed 975 / 975) 100%|█████████████| Time: 0:00:03[K
+[ Info:     Circles: 73, Nodes: 37166/37166, Time: 3.797980877 sec
+[ Info: Processing data/data010-028.json (28/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 114 / 419)  27%|███▌         |  ETA: 0:00:01[KSolving (Level 4, Processed 222 / 582)  38%|█████        |  ETA: 0:00:01[KSolving (Level 4, Processed 346 / 654)  53%|██████▉      |  ETA: 0:00:01[KSolving (Level 4, Processed 493 / 712)  69%|█████████    |  ETA: 0:00:01[KSolving (Level 5, Processed 636 / 760)  84%|██████████▉  |  ETA: 0:00:00[KSolving (Level 6, Processed 775 / 797)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 8, Processed 807 / 807) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 68, Nodes: 23713/23713, Time: 2.209196667 sec
+[ Info: Processing data/data010-029.json (29/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 289 / 591)  49%|██████▍      |  ETA: 0:00:01[KSolving (Level 4, Processed 471 / 690)  68%|████████▉    |  ETA: 0:00:01[KSolving (Level 5, Processed 591 / 763)  77%|██████████▏  |  ETA: 0:00:00[KSolving (Level 5, Processed 732 / 807)  91%|███████████▊ |  ETA: 0:00:00[KSolving (Level 7, Processed 825 / 825) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 67, Nodes: 28260/28260, Time: 2.357774876 sec
+[ Info: Processing data/data010-030.json (30/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 149 / 528)  28%|███▋         |  ETA: 0:00:02[KSolving (Level 4, Processed 283 / 637)  44%|█████▊       |  ETA: 0:00:01[KSolving (Level 4, Processed 430 / 751)  57%|███████▌     |  ETA: 0:00:01[KSolving (Level 5, Processed 576 / 825)  70%|█████████▏   |  ETA: 0:00:01[KSolving (Level 5, Processed 758 / 903)  84%|██████████▉  |  ETA: 0:00:00[KSolving (Level 7, Processed 939 / 956)  98%|████████████▊|  ETA: 0:00:00[KSolving (Level 9, Processed 962 / 962) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 70, Nodes: 39002/39002, Time: 2.667209835 sec
+[ Info: Processing data/data010-031.json (31/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 185 / 550)  34%|████▍        |  ETA: 0:00:01[KSolving (Level 4, Processed 479 / 698)  69%|████████▉    |  ETA: 0:00:01[KSolving (Level 5, Processed 653 / 725)  90%|███████████▊ |  ETA: 0:00:00[KSolving (Level 8, Processed 746 / 746) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 69, Nodes: 27006/27006, Time: 1.809567168 sec
+[ Info: Processing data/data010-032.json (32/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 203 / 474)  43%|█████▋       |  ETA: 0:00:00[KSolving (Level 4, Processed 458 / 594)  77%|██████████   |  ETA: 0:00:00[KSolving (Level 8, Processed 661 / 661) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 68, Nodes: 13118/13118, Time: 0.947998917 sec
+[ Info: Processing data/data010-033.json (33/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 183 / 505)  36%|████▊        |  ETA: 0:00:01[KSolving (Level 4, Processed 317 / 599)  53%|██████▉      |  ETA: 0:00:01[KSolving (Level 4, Processed 434 / 694)  63%|████████▏    |  ETA: 0:00:01[KSolving (Level 5, Processed 587 / 746)  79%|██████████▎  |  ETA: 0:00:00[KSolving (Level 6, Processed 776 / 796)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 8, Processed 808 / 808) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 32631/32631, Time: 1.814189751 sec
+[ Info: Processing data/data010-034.json (34/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 215 / 521)  41%|█████▍       |  ETA: 0:00:01[KSolving (Level 4, Processed 382 / 618)  62%|████████     |  ETA: 0:00:01[KSolving (Level 4, Processed 516 / 692)  75%|█████████▊   |  ETA: 0:00:00[KSolving (Level 5, Processed 658 / 750)  88%|███████████▍ |  ETA: 0:00:00[KSolving (Level 7, Processed 796 / 815)  98%|████████████▊|  ETA: 0:00:00[KSolving (Level 8, Processed 828 / 828) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 69, Nodes: 41005/41005, Time: 2.113447126 sec
+[ Info: Processing data/data010-035.json (35/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 222 / 545)  41%|█████▎       |  ETA: 0:00:01[KSolving (Level 4, Processed 429 / 661)  65%|████████▍    |  ETA: 0:00:00[KSolving (Level 5, Processed 670 / 757)  89%|███████████▌ |  ETA: 0:00:00[KSolving (Level 8, Processed 814 / 814) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 65, Nodes: 18601/18601, Time: 1.185040792 sec
+[ Info: Processing data/data010-036.json (36/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 166 / 542)  31%|████         |  ETA: 0:00:01[KSolving (Level 4, Processed 329 / 660)  50%|██████▌      |  ETA: 0:00:01[KSolving (Level 4, Processed 492 / 780)  63%|████████▎    |  ETA: 0:00:01[KSolving (Level 5, Processed 651 / 878)  74%|█████████▋   |  ETA: 0:00:00[KSolving (Level 6, Processed 897 / 953)  94%|████████████▎|  ETA: 0:00:00[KSolving (Level 9, Processed 971 / 971) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 68, Nodes: 31250/31250, Time: 1.715053834 sec
+[ Info: Processing data/data010-037.json (37/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 120 / 495)  24%|███▏         |  ETA: 0:00:01[KSolving (Level 4, Processed 216 / 652)  33%|████▎        |  ETA: 0:00:04[KSolving (Level 4, Processed 366 / 798)  46%|██████       |  ETA: 0:00:03[KSolving (Level 4, Processed 454 / 841)  54%|███████      |  ETA: 0:00:02[KSolving (Level 4, Processed 523 / 894)  59%|███████▋     |  ETA: 0:00:02[KSolving (Level 4, Processed 622 / 938)  66%|████████▋    |  ETA: 0:00:02[KSolving (Level 5, Processed 886 / 1023)  87%|██████████▍ |  ETA: 0:00:01[KSolving (Level 6, Processed 1032 / 1055)  98%|██████████▊|  ETA: 0:00:00[KSolving (Level 9, Processed 1067 / 1067) 100%|███████████| Time: 0:00:04[K
+[ Info:     Circles: 70, Nodes: 72281/72281, Time: 4.569739627 sec
+[ Info: Processing data/data010-038.json (38/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 209 / 584)  36%|████▋        |  ETA: 0:00:01[KSolving (Level 4, Processed 333 / 682)  49%|██████▍      |  ETA: 0:00:01[KSolving (Level 4, Processed 488 / 749)  65%|████████▌    |  ETA: 0:00:01[KSolving (Level 5, Processed 711 / 823)  86%|███████████▎ |  ETA: 0:00:00[KSolving (Level 8, Processed 899 / 899) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 23943/23943, Time: 1.738256626 sec
+[ Info: Processing data/data010-039.json (39/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 188 / 620)  30%|████         |  ETA: 0:00:02[KSolving (Level 4, Processed 312 / 727)  43%|█████▋       |  ETA: 0:00:02[KSolving (Level 4, Processed 419 / 798)  53%|██████▉      |  ETA: 0:00:02[KSolving (Level 4, Processed 510 / 861)  59%|███████▊     |  ETA: 0:00:01[KSolving (Level 4, Processed 596 / 910)  65%|████████▌    |  ETA: 0:00:02[KSolving (Level 5, Processed 678 / 929)  73%|█████████▌   |  ETA: 0:00:01[KSolving (Level 5, Processed 757 / 983)  77%|██████████   |  ETA: 0:00:01[KSolving (Level 6, Processed 1031 / 1073)  96%|██████████▋|  ETA: 0:00:00[KSolving (Level 8, Processed 1074 / 1074) 100%|███████████| Time: 0:00:05[K
+[ Info:     Circles: 72, Nodes: 93687/93687, Time: 5.157743836 sec
+[ Info: Processing data/data010-040.json (40/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 171 / 574)  30%|███▉         |  ETA: 0:00:01[KSolving (Level 4, Processed 337 / 676)  50%|██████▌      |  ETA: 0:00:01[KSolving (Level 4, Processed 499 / 772)  65%|████████▍    |  ETA: 0:00:01[KSolving (Level 5, Processed 702 / 815)  86%|███████████▎ |  ETA: 0:00:00[KSolving (Level 7, Processed 848 / 848) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 69, Nodes: 31314/31314, Time: 1.726125126 sec
+[ Info: Processing data/data010-041.json (41/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 118 / 450)  26%|███▍         |  ETA: 0:00:01[KSolving (Level 4, Processed 234 / 593)  39%|█████▏       |  ETA: 0:00:01[KSolving (Level 4, Processed 447 / 742)  60%|███████▉     |  ETA: 0:00:01[KSolving (Level 5, Processed 620 / 849)  73%|█████████▌   |  ETA: 0:00:01[KSolving (Level 5, Processed 774 / 899)  86%|███████████▎ |  ETA: 0:00:00[KSolving (Level 7, Processed 935 / 967)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 8, Processed 970 / 970) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 71, Nodes: 42549/42549, Time: 2.433542126 sec
+[ Info: Processing data/data010-042.json (42/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 153 / 530)  29%|███▊         |  ETA: 0:00:01[KSolving (Level 4, Processed 301 / 638)  47%|██████▏      |  ETA: 0:00:01[KSolving (Level 4, Processed 482 / 707)  68%|████████▉    |  ETA: 0:00:01[KSolving (Level 5, Processed 692 / 763)  91%|███████████▊ |  ETA: 0:00:00[KSolving (Level 7, Processed 778 / 778) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 65, Nodes: 22515/22515, Time: 1.624095626 sec
+[ Info: Processing data/data010-043.json (43/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 161 / 564)  29%|███▊         |  ETA: 0:00:01[KSolving (Level 4, Processed 241 / 648)  37%|████▉        |  ETA: 0:00:02[KSolving (Level 4, Processed 404 / 773)  52%|██████▊      |  ETA: 0:00:01[KSolving (Level 4, Processed 555 / 833)  67%|████████▋    |  ETA: 0:00:01[KSolving (Level 5, Processed 774 / 897)  86%|███████████▎ |  ETA: 0:00:00[KSolving (Level 9, Processed 942 / 942) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 70, Nodes: 27468/27468, Time: 2.11875946 sec
+[ Info: Processing data/data010-044.json (44/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 178 / 567)  31%|████▏        |  ETA: 0:00:01[KSolving (Level 4, Processed 366 / 696)  53%|██████▉      |  ETA: 0:00:01[KSolving (Level 4, Processed 516 / 781)  66%|████████▋    |  ETA: 0:00:01[KSolving (Level 5, Processed 699 / 859)  81%|██████████▋  |  ETA: 0:00:00[KSolving (Level 7, Processed 899 / 943)  95%|████████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 956 / 956) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 73, Nodes: 25047/25047, Time: 1.941206043 sec
+[ Info: Processing data/data010-045.json (45/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 161 / 516)  31%|████         |  ETA: 0:00:01[KSolving (Level 4, Processed 351 / 640)  55%|███████▏     |  ETA: 0:00:01[KSolving (Level 4, Processed 517 / 758)  68%|████████▉    |  ETA: 0:00:00[KSolving (Level 5, Processed 743 / 854)  87%|███████████▎ |  ETA: 0:00:00[KSolving (Level 10, Processed 909 / 909) 100%|████████████| Time: 0:00:01[K
+[ Info:     Circles: 68, Nodes: 30603/30729, Time: 1.600716709 sec
+[ Info: Processing data/data010-046.json (46/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 199 / 562)  35%|████▋        |  ETA: 0:00:01[KSolving (Level 4, Processed 335 / 645)  52%|██████▊      |  ETA: 0:00:01[KSolving (Level 4, Processed 458 / 702)  65%|████████▌    |  ETA: 0:00:01[KSolving (Level 5, Processed 592 / 765)  77%|██████████   |  ETA: 0:00:00[KSolving (Level 6, Processed 765 / 828)  92%|████████████ |  ETA: 0:00:00[KSolving (Level 8, Processed 838 / 838) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 70, Nodes: 48609/48609, Time: 1.892256709 sec
+[ Info: Processing data/data010-047.json (47/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 216 / 510)  42%|█████▌       |  ETA: 0:00:01[KSolving (Level 4, Processed 408 / 609)  67%|████████▊    |  ETA: 0:00:00[KSolving (Level 5, Processed 599 / 670)  89%|███████████▋ |  ETA: 0:00:00[KSolving (Level 7, Processed 691 / 691) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 66, Nodes: 26891/26891, Time: 1.284514333 sec
+[ Info: Processing data/data010-048.json (48/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 200 / 661)  30%|███▉         |  ETA: 0:00:03[KSolving (Level 4, Processed 348 / 773)  45%|█████▉       |  ETA: 0:00:02[KSolving (Level 4, Processed 421 / 852)  49%|██████▍      |  ETA: 0:00:02[KSolving (Level 4, Processed 568 / 975)  58%|███████▋     |  ETA: 0:00:02[KSolving (Level 4, Processed 622 / 988)  63%|████████▏    |  ETA: 0:00:02[KSolving (Level 5, Processed 789 / 1088)  73%|████████▊   |  ETA: 0:00:01[KSolving (Level 5, Processed 996 / 1170)  85%|██████████▎ |  ETA: 0:00:01[KSolving (Level 6, Processed 1140 / 1201)  95%|██████████▌|  ETA: 0:00:00[KSolving (Level 9, Processed 1211 / 1211) 100%|███████████| Time: 0:00:04[K
+[ Info:     Circles: 70, Nodes: 56158/56158, Time: 4.953521377 sec
+[ Info: Processing data/data010-049.json (49/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 3, Processed 121 / 481)  25%|███▎         |  ETA: 0:00:01[KSolving (Level 4, Processed 241 / 655)  37%|████▊        |  ETA: 0:00:03[KSolving (Level 4, Processed 408 / 771)  53%|██████▉      |  ETA: 0:00:02[KSolving (Level 4, Processed 542 / 849)  64%|████████▎    |  ETA: 0:00:01[KSolving (Level 5, Processed 638 / 871)  73%|█████████▌   |  ETA: 0:00:01[KSolving (Level 5, Processed 810 / 913)  89%|███████████▌ |  ETA: 0:00:00[KSolving (Level 6, Processed 919 / 955)  96%|████████████▌|  ETA: 0:00:00[KSolving (Level 8, Processed 980 / 980) 100%|█████████████| Time: 0:00:03[K
+[ Info:     Circles: 73, Nodes: 53006/53006, Time: 3.542015835 sec
+[ Info: Processing data/data010-050.json (50/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 240 / 553)  43%|█████▋       |  ETA: 0:00:01[KSolving (Level 4, Processed 331 / 595)  56%|███████▎     |  ETA: 0:00:01[KSolving (Level 5, Processed 557 / 719)  77%|██████████▏  |  ETA: 0:00:01[KSolving (Level 6, Processed 746 / 795)  94%|████████████▎|  ETA: 0:00:00[KSolving (Level 7, Processed 805 / 805) 100%|█████████████| Time: 0:00:02[K
+[ Info:     Circles: 68, Nodes: 42712/42712, Time: 2.227095251 sec
+[ Info: Wrote 50 results to experiment6/results/ycoord_scalability/results_bdd_010_ycoordinate.csv

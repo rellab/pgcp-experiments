@@ -1,0 +1,54 @@
+[ Info: data/data013-001.json: eval=465920 checked=0 mismatch=0 min|d2-r2|=6.050e-07
+[ Info: data/data013-002.json: eval=974464 checked=0 mismatch=0 min|d2-r2|=5.698e-07
+[ Info: data/data013-003.json: eval=626304 checked=0 mismatch=0 min|d2-r2|=7.164e-08
+[ Info: data/data013-004.json: eval=991872 checked=0 mismatch=0 min|d2-r2|=1.335e-07
+[ Info: data/data013-005.json: eval=1007232 checked=0 mismatch=0 min|d2-r2|=1.440e-07
+[ Info: data/data013-006.json: eval=683904 checked=0 mismatch=0 min|d2-r2|=2.082e-07
+[ Info: data/data013-007.json: eval=813440 checked=0 mismatch=0 min|d2-r2|=2.946e-07
+[ Info: data/data013-008.json: eval=878080 checked=0 mismatch=0 min|d2-r2|=6.155e-08
+[ Info: data/data013-009.json: eval=551616 checked=0 mismatch=0 min|d2-r2|=4.601e-07
+[ Info: data/data013-010.json: eval=600896 checked=0 mismatch=0 min|d2-r2|=5.556e-08
+Solving (Level 7, Processed 399 / 412)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 9, Processed 423 / 423) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data013-011.json: eval=1218240 checked=0 mismatch=0 min|d2-r2|=6.586e-08
+[ Info: data/data013-012.json: eval=683520 checked=0 mismatch=0 min|d2-r2|=1.364e-07
+[ Info: data/data013-013.json: eval=773312 checked=0 mismatch=0 min|d2-r2|=9.956e-07
+[ Info: data/data013-014.json: eval=1059840 checked=0 mismatch=0 min|d2-r2|=1.979e-07
+[ Info: data/data013-015.json: eval=657920 checked=0 mismatch=0 min|d2-r2|=3.015e-07
+[ Info: data/data013-016.json: eval=563200 checked=0 mismatch=0 min|d2-r2|=1.359e-07
+[ Info: data/data013-017.json: eval=627200 checked=0 mismatch=0 min|d2-r2|=4.328e-07
+[ Info: data/data013-018.json: eval=1001728 checked=0 mismatch=0 min|d2-r2|=9.134e-08
+[ Info: data/data013-019.json: eval=635712 checked=0 mismatch=0 min|d2-r2|=4.524e-08
+[ Info: data/data013-020.json: eval=705856 checked=0 mismatch=0 min|d2-r2|=1.857e-08
+[ Info: data/data013-021.json: eval=907200 checked=0 mismatch=0 min|d2-r2|=2.036e-07
+[ Info: data/data013-022.json: eval=963200 checked=0 mismatch=0 min|d2-r2|=9.774e-08
+Solving (Level 7, Processed 386 / 393)  98%|████████████▊|  ETA: 0:00:00[KSolving (Level 10, Processed 410 / 410) 100%|████████████| Time: 0:00:00[K
+[ Info: data/data013-023.json: eval=1102080 checked=0 mismatch=0 min|d2-r2|=1.388e-09
+[ Info: data/data013-024.json: eval=873792 checked=0 mismatch=0 min|d2-r2|=2.663e-08
+[ Info: data/data013-025.json: eval=977152 checked=0 mismatch=0 min|d2-r2|=9.826e-08
+[ Info: data/data013-026.json: eval=864000 checked=0 mismatch=0 min|d2-r2|=1.903e-07
+[ Info: data/data013-027.json: eval=696192 checked=0 mismatch=0 min|d2-r2|=1.650e-08
+[ Info: data/data013-028.json: eval=1028160 checked=0 mismatch=0 min|d2-r2|=2.036e-07
+[ Info: data/data013-029.json: eval=711680 checked=0 mismatch=0 min|d2-r2|=1.222e-07
+[ Info: data/data013-030.json: eval=673280 checked=0 mismatch=0 min|d2-r2|=4.546e-08
+[ Info: data/data013-031.json: eval=871168 checked=0 mismatch=0 min|d2-r2|=6.283e-08
+Solving (Level 6, Processed 404 / 454)  89%|███████████▋ |  ETA: 0:00:00[KSolving (Level 7, Processed 469 / 469) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data013-032.json: eval=1350720 checked=0 mismatch=0 min|d2-r2|=2.732e-08
+[ Info: data/data013-033.json: eval=974208 checked=0 mismatch=0 min|d2-r2|=6.483e-08
+[ Info: data/data013-034.json: eval=1026816 checked=0 mismatch=0 min|d2-r2|=1.880e-07
+[ Info: data/data013-035.json: eval=1078528 checked=0 mismatch=0 min|d2-r2|=1.861e-07
+[ Info: data/data013-036.json: eval=932928 checked=0 mismatch=0 min|d2-r2|=5.328e-08
+[ Info: data/data013-037.json: eval=628992 checked=0 mismatch=0 min|d2-r2|=3.952e-07
+[ Info: data/data013-038.json: eval=740288 checked=0 mismatch=0 min|d2-r2|=1.560e-07
+[ Info: data/data013-039.json: eval=648128 checked=0 mismatch=0 min|d2-r2|=1.557e-08
+[ Info: data/data013-040.json: eval=833280 checked=0 mismatch=0 min|d2-r2|=1.775e-07
+[ Info: data/data013-041.json: eval=739200 checked=0 mismatch=0 min|d2-r2|=7.232e-08
+[ Info: data/data013-042.json: eval=1092608 checked=0 mismatch=0 min|d2-r2|=4.762e-09
+[ Info: data/data013-043.json: eval=1005312 checked=0 mismatch=0 min|d2-r2|=3.015e-09
+[ Info: data/data013-044.json: eval=974464 checked=0 mismatch=0 min|d2-r2|=5.267e-07
+[ Info: data/data013-045.json: eval=944640 checked=0 mismatch=0 min|d2-r2|=1.156e-07
+[ Info: data/data013-046.json: eval=544128 checked=0 mismatch=0 min|d2-r2|=5.393e-08
+Solving (Level 5, Processed 378 / 396)  95%|████████████▍|  ETA: 0:00:00[KSolving (Level 6, Processed 396 / 396) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data013-047.json: eval=1140480 checked=0 mismatch=0 min|d2-r2|=6.961e-08
+[ Info: data/data013-048.json: eval=1078528 checked=0 mismatch=0 min|d2-r2|=9.841e-08
+[ Info: data/data013-049.json: eval=1075712 checked=0 mismatch=0 min|d2-r2|=1.967e-07
+[ Info: data/data013-050.json: eval=861696 checked=0 mismatch=0 min|d2-r2|=1.820e-08

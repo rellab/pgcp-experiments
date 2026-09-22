@@ -1,0 +1,11 @@
+datafile,n,evaluations,checked_exact,mismatches,min_abs_margin,min_rel_margin,converged
+data/data009-001.json,86,7441408,0,0,1.017196e-08,2.162219e-07,true
+data/data009-002.json,90,8749440,0,0,3.181502e-09,6.393629e-08,true
+data/data009-003.json,85,7431040,0,0,1.238620e-08,1.462608e-07,true
+data/data009-004.json,84,6580224,0,0,3.613174e-09,9.032934e-08,true
+data/data009-005.json,84,7574784,0,0,8.312740e-09,5.195462e-08,true
+data/data009-006.json,88,8279040,0,0,2.223849e-08,2.235233e-07,true
+data/data009-007.json,85,7229760,0,0,6.358429e-09,3.974018e-08,true
+data/data009-008.json,84,7435008,0,0,3.405454e-09,2.519773e-08,true
+data/data009-009.json,82,7457408,0,0,1.275444e-08,7.971527e-08,true
+data/data009-010.json,76,4630528,0,0,7.261156e-09,4.538222e-08,true

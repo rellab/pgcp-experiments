@@ -1,0 +1,4 @@
+[ Info: Processing data/data015-001.json (1/1)
+[ Info:   Sorting with mode: angles_from_center
+[ Info:     Circles: 35, Nodes: 433/433, Time: 0.654922292 sec
+[ Info: Wrote 1 results to experiment6/results/timing/bdd_015.csv

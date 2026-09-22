@@ -1,0 +1,5 @@
+[ Info: Processing data/data012-001.json (1/1)
+[ Info:   Sorting with mode: angles_from_center
+Solving (Level 5, Processed 323 / 403)  80%|██████████▍  |  ETA: 0:00:00[KSolving (Level 8, Processed 446 / 446) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 8603/8603, Time: 1.081274583 sec
+[ Info: Wrote 1 results to experiment6/results/timing/bdd_012.csv

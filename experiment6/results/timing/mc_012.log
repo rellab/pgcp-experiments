@@ -1,0 +1,4 @@
+data/data012-001.json: n=50, p=0.90, candidates=1109, min margin=9.65e-06, precompute=0.000s
+all components active -> covered = true
+        N   failures   R_hat          95% CI half-width   1-R_hat      time(s)
+ 10000000      23321   0.9976679000   2.990e-05           2.332e-03    10.083

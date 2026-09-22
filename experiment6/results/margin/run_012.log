@@ -1,0 +1,92 @@
+Solving (Level 4, Processed 206 / 350)  59%|███████▋     |  ETA: 0:00:00[KSolving (Level 8, Processed 446 / 446) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-001.json: eval=1427200 checked=0 mismatch=0 min|d2-r2|=1.469e-08
+Solving (Level 4, Processed 305 / 437)  70%|█████████▏   |  ETA: 0:00:00[KSolving (Level 9, Processed 527 / 527) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-002.json: eval=1720128 checked=0 mismatch=0 min|d2-r2|=8.847e-09
+Solving (Level 4, Processed 310 / 479)  65%|████████▍    |  ETA: 0:00:00[KSolving (Level 8, Processed 562 / 562) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-003.json: eval=1798400 checked=0 mismatch=0 min|d2-r2|=3.489e-08
+Solving (Level 5, Processed 310 / 373)  83%|██████████▊  |  ETA: 0:00:00[KSolving (Level 8, Processed 418 / 418) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-004.json: eval=1310848 checked=0 mismatch=0 min|d2-r2|=6.403e-09
+Solving (Level 5, Processed 337 / 379)  89%|███████████▌ |  ETA: 0:00:00[KSolving (Level 7, Processed 393 / 393) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-005.json: eval=1207296 checked=0 mismatch=0 min|d2-r2|=2.506e-08
+[ Info: data/data012-006.json: eval=1030400 checked=0 mismatch=0 min|d2-r2|=2.287e-07
+Solving (Level 5, Processed 334 / 416)  80%|██████████▌  |  ETA: 0:00:00[KSolving (Level 7, Processed 444 / 444) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-007.json: eval=1392384 checked=0 mismatch=0 min|d2-r2|=4.338e-09
+[ Info: data/data012-008.json: eval=939136 checked=0 mismatch=0 min|d2-r2|=2.160e-08
+Solving (Level 5, Processed 333 / 382)  87%|███████████▍ |  ETA: 0:00:00[KSolving (Level 6, Processed 390 / 390) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-009.json: eval=1173120 checked=0 mismatch=0 min|d2-r2|=9.281e-08
+Solving (Level 4, Processed 321 / 451)  71%|█████████▎   |  ETA: 0:00:00[KSolving (Level 8, Processed 534 / 534) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-010.json: eval=1708800 checked=0 mismatch=0 min|d2-r2|=2.522e-09
+Solving (Level 4, Processed 276 / 466)  59%|███████▊     |  ETA: 0:00:00[KSolving (Level 7, Processed 579 / 592)  98%|████████████▊|  ETA: 0:00:00[KSolving (Level 8, Processed 592 / 592) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-011.json: eval=1894400 checked=0 mismatch=0 min|d2-r2|=3.373e-08
+Solving (Level 4, Processed 291 / 463)  63%|████████▏    |  ETA: 0:00:00[KSolving (Level 7, Processed 523 / 523) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-012.json: eval=1673600 checked=0 mismatch=0 min|d2-r2|=1.011e-07
+Solving (Level 4, Processed 305 / 450)  68%|████████▊    |  ETA: 0:00:00[KSolving (Level 7, Processed 538 / 538) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-013.json: eval=1756032 checked=0 mismatch=0 min|d2-r2|=5.854e-09
+Solving (Level 5, Processed 329 / 445)  74%|█████████▋   |  ETA: 0:00:00[KSolving (Level 7, Processed 516 / 516) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-014.json: eval=1717248 checked=0 mismatch=0 min|d2-r2|=1.520e-07
+Solving (Level 5, Processed 333 / 395)  84%|███████████  |  ETA: 0:00:00[KSolving (Level 9, Processed 433 / 433) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-015.json: eval=1385600 checked=0 mismatch=0 min|d2-r2|=3.575e-09
+Solving (Level 5, Processed 362 / 387)  94%|████████████▏|  ETA: 0:00:00[KSolving (Level 8, Processed 409 / 409) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-016.json: eval=1256448 checked=0 mismatch=0 min|d2-r2|=7.679e-08
+Solving (Level 4, Processed 249 / 448)  56%|███████▎     |  ETA: 0:00:00[KSolving (Level 5, Processed 506 / 547)  93%|████████████ |  ETA: 0:00:00[KSolving (Level 7, Processed 557 / 557) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-017.json: eval=1853696 checked=0 mismatch=0 min|d2-r2|=1.544e-08
+Solving (Level 5, Processed 330 / 381)  87%|███████████▎ |  ETA: 0:00:00[KSolving (Level 7, Processed 404 / 404) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-018.json: eval=1292800 checked=0 mismatch=0 min|d2-r2|=5.761e-08
+Solving (Level 4, Processed 302 / 422)  72%|█████████▎   |  ETA: 0:00:00[KSolving (Level 7, Processed 438 / 438) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-019.json: eval=1457664 checked=0 mismatch=0 min|d2-r2|=7.845e-08
+Solving (Level 6, Processed 356 / 370)  96%|████████████▌|  ETA: 0:00:00[KSolving (Level 8, Processed 371 / 371) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-020.json: eval=1139712 checked=0 mismatch=0 min|d2-r2|=1.689e-08
+Solving (Level 4, Processed 341 / 426)  80%|██████████▍  |  ETA: 0:00:00[KSolving (Level 8, Processed 488 / 488) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-021.json: eval=1561600 checked=0 mismatch=0 min|d2-r2|=6.707e-08
+Solving (Level 4, Processed 291 / 419)  69%|█████████    |  ETA: 0:00:00[KSolving (Level 7, Processed 450 / 450) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-022.json: eval=1411200 checked=0 mismatch=0 min|d2-r2|=2.521e-07
+Solving (Level 5, Processed 332 / 400)  83%|██████████▊  |  ETA: 0:00:00[KSolving (Level 7, Processed 417 / 417) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-023.json: eval=1334400 checked=0 mismatch=0 min|d2-r2|=1.330e-07
+Solving (Level 4, Processed 322 / 411)  78%|██████████▏  |  ETA: 0:00:00[KSolving (Level 9, Processed 448 / 448) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-024.json: eval=1404928 checked=0 mismatch=0 min|d2-r2|=3.701e-08
+Solving (Level 5, Processed 326 / 403)  81%|██████████▌  |  ETA: 0:00:00[KSolving (Level 8, Processed 457 / 457) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-025.json: eval=1433152 checked=0 mismatch=0 min|d2-r2|=3.286e-09
+Solving (Level 4, Processed 326 / 448)  73%|█████████▌   |  ETA: 0:00:00[KSolving (Level 8, Processed 486 / 486) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-026.json: eval=1586304 checked=0 mismatch=0 min|d2-r2|=1.458e-07
+Solving (Level 5, Processed 367 / 379)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 8, Processed 382 / 382) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-027.json: eval=1173504 checked=0 mismatch=0 min|d2-r2|=4.803e-07
+[ Info: data/data012-028.json: eval=915712 checked=0 mismatch=0 min|d2-r2|=2.895e-07
+[ Info: data/data012-029.json: eval=978432 checked=4 mismatch=0 min|d2-r2|=6.514e-10
+[ Info: data/data012-030.json: eval=980352 checked=0 mismatch=0 min|d2-r2|=1.349e-07
+Solving (Level 4, Processed 266 / 455)  58%|███████▋     |  ETA: 0:00:00[KSolving (Level 7, Processed 527 / 527) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-031.json: eval=1686400 checked=0 mismatch=0 min|d2-r2|=2.389e-07
+Solving (Level 4, Processed 248 / 374)  66%|████████▋    |  ETA: 0:00:00[KSolving (Level 6, Processed 462 / 462) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-032.json: eval=1507968 checked=0 mismatch=0 min|d2-r2|=3.123e-08
+Solving (Level 4, Processed 314 / 426)  74%|█████████▋   |  ETA: 0:00:00[KSolving (Level 8, Processed 471 / 471) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-033.json: eval=1537344 checked=0 mismatch=0 min|d2-r2|=5.570e-08
+Solving (Level 4, Processed 320 / 441)  73%|█████████▍   |  ETA: 0:00:00[KSolving (Level 10, Processed 521 / 521) 100%|████████████| Time: 0:00:00[K
+[ Info: data/data012-034.json: eval=1667200 checked=0 mismatch=0 min|d2-r2|=9.421e-09
+Solving (Level 6, Processed 380 / 385)  99%|████████████▉|  ETA: 0:00:00[KSolving (Level 6, Processed 385 / 385) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-035.json: eval=1158080 checked=0 mismatch=0 min|d2-r2|=1.246e-08
+Solving (Level 5, Processed 346 / 379)  91%|███████████▉ |  ETA: 0:00:00[KSolving (Level 7, Processed 386 / 386) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-036.json: eval=1210496 checked=0 mismatch=0 min|d2-r2|=7.910e-08
+[ Info: data/data012-037.json: eval=1009792 checked=0 mismatch=0 min|d2-r2|=8.330e-08
+Solving (Level 4, Processed 286 / 465)  62%|████████     |  ETA: 0:00:00[KSolving (Level 9, Processed 552 / 552) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-038.json: eval=1766400 checked=0 mismatch=0 min|d2-r2|=4.065e-09
+[ Info: data/data012-039.json: eval=1042176 checked=0 mismatch=0 min|d2-r2|=9.088e-08
+Solving (Level 4, Processed 274 / 439)  62%|████████▏    |  ETA: 0:00:00[KSolving (Level 7, Processed 473 / 473) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-040.json: eval=1574144 checked=0 mismatch=0 min|d2-r2|=1.553e-07
+[ Info: data/data012-041.json: eval=1129600 checked=0 mismatch=0 min|d2-r2|=5.417e-09
+Solving (Level 4, Processed 263 / 416)  63%|████████▎    |  ETA: 0:00:00[KSolving (Level 10, Processed 494 / 494) 100%|████████████| Time: 0:00:00[K
+[ Info: data/data012-042.json: eval=1549184 checked=0 mismatch=0 min|d2-r2|=1.212e-08
+Solving (Level 5, Processed 303 / 323)  94%|████████████▎|  ETA: 0:00:00[KSolving (Level 6, Processed 324 / 324) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-043.json: eval=1119744 checked=0 mismatch=0 min|d2-r2|=3.136e-08
+Solving (Level 5, Processed 348 / 417)  83%|██████████▉  |  ETA: 0:00:00[KSolving (Level 7, Processed 445 / 445) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-044.json: eval=1395520 checked=0 mismatch=0 min|d2-r2|=9.925e-08
+Solving (Level 5, Processed 337 / 393)  86%|███████████▏ |  ETA: 0:00:00[KSolving (Level 7, Processed 402 / 402) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-045.json: eval=1260672 checked=0 mismatch=0 min|d2-r2|=1.016e-07
+Solving (Level 4, Processed 285 / 420)  68%|████████▉    |  ETA: 0:00:00[KSolving (Level 7, Processed 486 / 486) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-046.json: eval=1555200 checked=0 mismatch=0 min|d2-r2|=1.676e-08
+Solving (Level 5, Processed 332 / 375)  89%|███████████▌ |  ETA: 0:00:00[KSolving (Level 7, Processed 385 / 385) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-047.json: eval=1108800 checked=0 mismatch=0 min|d2-r2|=1.508e-07
+Solving (Level 5, Processed 359 / 372)  97%|████████████▌|  ETA: 0:00:00[KSolving (Level 7, Processed 374 / 374) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-048.json: eval=1172864 checked=0 mismatch=0 min|d2-r2|=4.338e-07
+Solving (Level 4, Processed 288 / 399)  72%|█████████▍   |  ETA: 0:00:00[KSolving (Level 8, Processed 459 / 459) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-049.json: eval=1498176 checked=0 mismatch=0 min|d2-r2|=3.781e-08
+Solving (Level 4, Processed 275 / 396)  69%|█████████    |  ETA: 0:00:00[KSolving (Level 9, Processed 474 / 474) 100%|█████████████| Time: 0:00:00[K
+[ Info: data/data012-050.json: eval=1547136 checked=2 mismatch=0 min|d2-r2|=6.357e-10

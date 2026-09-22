@@ -1,0 +1,5 @@
+[ Info: Processing data/data010-001.json (1/1)
+[ Info:   Sorting with mode: angles_from_center
+Solving (Level 4, Processed 168 / 549)  31%|████         |  ETA: 0:00:01[KSolving (Level 5, Processed 588 / 807)  73%|█████████▌   |  ETA: 0:00:00[KSolving (Level 6, Processed 826 / 882)  94%|████████████▏|  ETA: 0:00:00[KSolving (Level 9, Processed 900 / 900) 100%|█████████████| Time: 0:00:01[K
+[ Info:     Circles: 67, Nodes: 27069/27069, Time: 2.092426084 sec
+[ Info: Wrote 1 results to experiment6/results/timing/bdd_010.csv

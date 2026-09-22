@@ -1,0 +1,183 @@
+[ Info: Processing data/data012-001.json (1/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 265 / 375)  71%|█████████▏   |  ETA: 0:00:00[KSolving (Level 8, Processed 446 / 446) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 6727/6727, Time: 1.225882501 sec
+[ Info: Processing data/data012-002.json (2/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 387 / 484)  80%|██████████▍  |  ETA: 0:00:00[KSolving (Level 9, Processed 527 / 527) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 5455/5455, Time: 0.392760667 sec
+[ Info: Processing data/data012-003.json (3/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 368 / 509)  72%|█████████▍   |  ETA: 0:00:00[KSolving (Level 8, Processed 562 / 562) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 6504/6504, Time: 0.447579583 sec
+[ Info: Processing data/data012-004.json (4/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 6, Processed 397 / 414)  96%|████████████▌|  ETA: 0:00:00[KSolving (Level 8, Processed 418 / 418) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 6314/6314, Time: 0.314064834 sec
+[ Info: Processing data/data012-005.json (5/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 48, Nodes: 4603/4603, Time: 0.282102625 sec
+[ Info: Processing data/data012-006.json (6/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 46, Nodes: 3603/3603, Time: 0.243282834 sec
+[ Info: Processing data/data012-007.json (7/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 6, Processed 429 / 444)  97%|████████████▌|  ETA: 0:00:00[KSolving (Level 7, Processed 444 / 444) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 3305/3305, Time: 0.310767459 sec
+[ Info: Processing data/data012-008.json (8/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 46, Nodes: 2671/2671, Time: 0.219702209 sec
+[ Info: Processing data/data012-009.json (9/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 47, Nodes: 4334/4334, Time: 0.28516875 sec
+[ Info: Processing data/data012-010.json (10/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 406 / 467)  87%|███████████▎ |  ETA: 0:00:00[KSolving (Level 8, Processed 534 / 534) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 4248/4248, Time: 0.398493542 sec
+[ Info: Processing data/data012-011.json (11/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 334 / 490)  68%|████████▉    |  ETA: 0:00:00[KSolving (Level 8, Processed 592 / 592) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 13009/13009, Time: 0.499022333 sec
+[ Info: Processing data/data012-012.json (12/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 336 / 483)  70%|█████████    |  ETA: 0:00:00[KSolving (Level 7, Processed 523 / 523) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 6672/6672, Time: 0.45752275 sec
+[ Info: Processing data/data012-013.json (13/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 378 / 492)  77%|██████████   |  ETA: 0:00:00[KSolving (Level 7, Processed 538 / 538) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 5819/5819, Time: 0.4087235 sec
+[ Info: Processing data/data012-014.json (14/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 403 / 475)  85%|███████████  |  ETA: 0:00:00[KSolving (Level 7, Processed 516 / 516) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 52, Nodes: 5131/5131, Time: 0.405173126 sec
+[ Info: Processing data/data012-015.json (15/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 7, Processed 411 / 420)  98%|████████████▊|  ETA: 0:00:00[KSolving (Level 9, Processed 433 / 433) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 2978/2978, Time: 0.3159875 sec
+[ Info: Processing data/data012-016.json (16/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 48, Nodes: 2923/2923, Time: 0.287865292 sec
+[ Info: Processing data/data012-017.json (17/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 322 / 506)  64%|████████▎    |  ETA: 0:00:00[KSolving (Level 7, Processed 557 / 557) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 52, Nodes: 10416/10416, Time: 0.556584125 sec
+[ Info: Processing data/data012-018.json (18/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 50, Nodes: 4099/4099, Time: 0.291022167 sec
+[ Info: Processing data/data012-019.json (19/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 367 / 427)  86%|███████████▏ |  ETA: 0:00:00[KSolving (Level 7, Processed 438 / 438) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 52, Nodes: 4433/4433, Time: 0.354065042 sec
+[ Info: Processing data/data012-020.json (20/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 48, Nodes: 2415/2415, Time: 0.249497625 sec
+[ Info: Processing data/data012-021.json (21/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 397 / 456)  87%|███████████▍ |  ETA: 0:00:00[KSolving (Level 8, Processed 488 / 488) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 3694/3694, Time: 0.362701209 sec
+[ Info: Processing data/data012-022.json (22/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 342 / 432)  79%|██████████▎  |  ETA: 0:00:00[KSolving (Level 7, Processed 450 / 450) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 6198/6198, Time: 0.378013917 sec
+[ Info: Processing data/data012-023.json (23/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 50, Nodes: 3541/3541, Time: 0.299557667 sec
+[ Info: Processing data/data012-024.json (24/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 383 / 425)  90%|███████████▊ |  ETA: 0:00:00[KSolving (Level 9, Processed 448 / 448) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 5108/5108, Time: 0.34563225 sec
+[ Info: Processing data/data012-025.json (25/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 6, Processed 407 / 426)  96%|████████████▍|  ETA: 0:00:00[KSolving (Level 8, Processed 457 / 457) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 4067/4067, Time: 0.329135625 sec
+[ Info: Processing data/data012-026.json (26/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 396 / 462)  86%|███████████▏ |  ETA: 0:00:00[KSolving (Level 8, Processed 486 / 486) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 3497/3497, Time: 0.359394084 sec
+[ Info: Processing data/data012-027.json (27/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 48, Nodes: 3402/3402, Time: 0.261994125 sec
+[ Info: Processing data/data012-028.json (28/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 49, Nodes: 1716/1716, Time: 0.195873042 sec
+[ Info: Processing data/data012-029.json (29/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 49, Nodes: 1535/1535, Time: 0.219675708 sec
+[ Info: Processing data/data012-030.json (30/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 46, Nodes: 1999/1999, Time: 0.2188345 sec
+[ Info: Processing data/data012-031.json (31/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 387 / 507)  76%|█████████▉   |  ETA: 0:00:00[KSolving (Level 7, Processed 527 / 527) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 4800/4800, Time: 0.400629959 sec
+[ Info: Processing data/data012-032.json (32/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 318 / 421)  76%|█████████▉   |  ETA: 0:00:00[KSolving (Level 6, Processed 462 / 462) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 7339/7339, Time: 0.415237417 sec
+[ Info: Processing data/data012-033.json (33/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 383 / 448)  85%|███████████▏ |  ETA: 0:00:00[KSolving (Level 8, Processed 471 / 471) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 3446/3446, Time: 0.362323084 sec
+[ Info: Processing data/data012-034.json (34/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 379 / 456)  83%|██████████▊  |  ETA: 0:00:00[KSolving (Level 10, Processed 521 / 521) 100%|████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 8903/8903, Time: 0.435995501 sec
+[ Info: Processing data/data012-035.json (35/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 47, Nodes: 1662/1662, Time: 0.237430708 sec
+[ Info: Processing data/data012-036.json (36/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 370 / 384)  96%|████████████▌|  ETA: 0:00:00[KSolving (Level 7, Processed 386 / 386) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 2369/2369, Time: 0.308343708 sec
+[ Info: Processing data/data012-037.json (37/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 49, Nodes: 1119/1119, Time: 0.207631167 sec
+[ Info: Processing data/data012-038.json (38/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 349 / 486)  72%|█████████▍   |  ETA: 0:00:00[KSolving (Level 9, Processed 552 / 552) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 5492/5492, Time: 0.433432834 sec
+[ Info: Processing data/data012-039.json (39/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 46, Nodes: 1671/1671, Time: 0.238247542 sec
+[ Info: Processing data/data012-040.json (40/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 282 / 445)  63%|████████▎    |  ETA: 0:00:00[KSolving (Level 7, Processed 473 / 473) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 52, Nodes: 7578/7578, Time: 0.538134333 sec
+[ Info: Processing data/data012-041.json (41/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 50, Nodes: 1789/1789, Time: 0.249077626 sec
+[ Info: Processing data/data012-042.json (42/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 277 / 421)  66%|████████▌    |  ETA: 0:00:00[KSolving (Level 10, Processed 494 / 494) 100%|████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 8940/8940, Time: 0.477568667 sec
+[ Info: Processing data/data012-043.json (43/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 54, Nodes: 3283/3283, Time: 0.284946917 sec
+[ Info: Processing data/data012-044.json (44/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 5, Processed 347 / 417)  83%|██████████▉  |  ETA: 0:00:00[KSolving (Level 7, Processed 445 / 445) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 4683/4683, Time: 0.385358208 sec
+[ Info: Processing data/data012-045.json (45/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 6, Processed 391 / 402)  97%|████████████▋|  ETA: 0:00:00[KSolving (Level 7, Processed 402 / 402) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 49, Nodes: 5736/5736, Time: 0.314554459 sec
+[ Info: Processing data/data012-046.json (46/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 339 / 438)  77%|██████████   |  ETA: 0:00:00[KSolving (Level 7, Processed 486 / 486) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 50, Nodes: 5097/5097, Time: 0.419768 sec
+[ Info: Processing data/data012-047.json (47/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 7, Processed 382 / 385)  99%|████████████▉|  ETA: 0:00:00[KSolving (Level 7, Processed 385 / 385) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 45, Nodes: 4789/4789, Time: 0.30184425 sec
+[ Info: Processing data/data012-048.json (48/50)
+[ Info:   Sorting with mode: ycoordinate
+[ Info:     Circles: 49, Nodes: 3946/3946, Time: 0.264243041 sec
+[ Info: Processing data/data012-049.json (49/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 342 / 418)  82%|██████████▋  |  ETA: 0:00:00[KSolving (Level 8, Processed 459 / 459) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 4686/4686, Time: 0.381618084 sec
+[ Info: Processing data/data012-050.json (50/50)
+[ Info:   Sorting with mode: ycoordinate
+Solving (Level 4, Processed 321 / 420)  76%|█████████▉   |  ETA: 0:00:00[KSolving (Level 9, Processed 474 / 474) 100%|█████████████| Time: 0:00:00[K
+[ Info:     Circles: 51, Nodes: 4645/4645, Time: 0.435355375 sec
+[ Info: Wrote 50 results to experiment6/results/ycoord_scalability/results_bdd_012_ycoordinate.csv
