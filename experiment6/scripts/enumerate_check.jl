@@ -9,10 +9,12 @@
 # BDD solver on the same instance.
 #
 # Usage (from pgcp-experiments/, inside the cudd-julia image):
-#   julia experiment6/scripts/enumerate_check.jl [n_instances] [pds_distance] [seed]
+#   julia experiment6/scripts/enumerate_check.jl [n_instances] [pds_distance | dataset_prefix] [seed]
+#   e.g. julia experiment6/scripts/enumerate_check.jl 8 data/data020 42   (reuse data020 placements)
 
 using Printf
 using Random
+using JSON
 
 include(joinpath(@__DIR__, "coverage_judges.jl"))
 include(joinpath(@__DIR__, "..", "..", "scripts", "bdd_solver.jl"))
@@ -52,17 +54,28 @@ function bdd_bounds(disks::Vector{Disk}, p::Float64; gridsize::Int = 4, maxlevel
     return (lb = lb, ub = ub, conv = res.conv, time = t)
 end
 
+# Reuse the component placements of an existing dataset (e.g. data/data020) and
+# assign heterogeneous radii from {0.2, 0.4} with the given rng, as in the
+# two-step generation of Section V-A.
+function load_placement(prefix::AbstractString, i::Int, rng)
+    cfg = JSON.parsefile(@sprintf("%s-%03d.json", prefix, i))
+    return [Disk(Float64(c["x"]), Float64(c["y"]), rand(rng, (0.2, 0.4))) for c in cfg["circles"]]
+end
+
 function main(argv)
     ninst = length(argv) >= 1 ? parse(Int, argv[1]) : 10
-    dmin  = length(argv) >= 2 ? parse(Float64, argv[2]) : 0.28
+    src   = length(argv) >= 2 ? argv[2] : "0.28"
     seed  = length(argv) >= 3 ? parse(Int, argv[3]) : 42
+    reuse = !occursin(r"^[0-9.]+$", src)
+    dmin  = reuse ? NaN : parse(Float64, src)
     p = 0.9
     rng = MersenneTwister(seed)
     R = Rect(0.0, 1.0, 0.0, 1.0)
+    reuse && println("# placements from $src-001..$(lpad(ninst,3,'0')), radii from {0.2,0.4}, seed $seed")
 
     println("inst   n  states  covered   A!=B   R_enum(A)            R_lower(BDD)         R_upper(BDD)         |diff|     conv  marginA   marginB   tA(s)  tB(s)  tBDD(s)")
     for inst in 1:ninst
-        disks = gen_instance(rng, dmin)
+        disks = reuse ? load_placement(src, inst, rng) : gen_instance(rng, dmin)
         n = length(disks)
         J = ArrangementJudge(disks, R)
 

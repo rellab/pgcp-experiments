@@ -45,19 +45,22 @@ Both are double-precision implementations (square roots for intersection points,
 
 ```sh
 docker run --rm -v "$PWD:/work" -w /work cudd-julia \
-  julia experiment6/scripts/enumerate_check.jl 8 0.21 42
+  julia experiment6/scripts/enumerate_check.jl 8 data/data020 42
 ```
 
-Generates 8 instances on the unit square by dart-throwing Poisson disk
-sampling with minimum distance 0.21 (n = 19 to 23), radii from {0.2, 0.4},
-p_k = 0.9, seed 42. All 2^n states are judged by A and B; the enumerated
-reliability is compared with the BDD bounds.
+**Paper version (2026-09-23).** Reuses the component placements of
+`data020-001..008` (n = 17 to 22) and assigns radii from {0.2, 0.4} with seed
+42, following the two-step generation of Section V-A; p_k = 0.9. All 2^n states
+are judged by A and B; the enumerated reliability is compared with the BDD
+bounds. Output saved in `results/enumerate_data020.txt`. Result: A and B agree
+on all 8,519,680 states; the enumerated R equals the BDD value to at most
+1.3e-13; all BDD runs converge; instance 1 cannot be covered even with all
+components active (R = 0 from both methods).
 
-Result (2026-09-21): A and B agree on all 23,592,960 states (2^23 + 2^22 + 5*2^21 + 2^19); the enumerated R
-equals the BDD value to at most 1.4e-13 on every instance; all BDD runs
-converge. A first attempt with minimum distance 0.28 (n = 11 to 14) gave
-R = 0 on 8 of 10 instances (the disks were too sparse to cover the square)
-and was discarded as uninformative.
+**Earlier variant.** With a numeric second argument the script generates fresh
+instances by dart-throwing PDS with that minimum distance (e.g. `8 0.21 42`
+gave n = 19 to 23; `10 0.28 42` gave R = 0 on 8 of 10 instances). These were
+used during development and are superseded by the data020-based run above.
 
 ## Monte Carlo baseline (`scripts/monte_carlo.jl`)
 
