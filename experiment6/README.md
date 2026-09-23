@@ -69,7 +69,7 @@ docker run --rm -v "$PWD:/work" -w /work cudd-julia \
   julia experiment6/scripts/monte_carlo.jl data/data015-001.json 42 10000000
 ```
 
-Crude Monte Carlo with judge A. Reports the estimate, a Wald 95% half-width, the number of failures and the running time for each sample size. For the paper, exact (Clopper-Pearson) intervals were computed from the failure counts with `scripts/clopper_pearson.py`, because the Wald interval is unreliable with few failures.
+Plain Monte Carlo (no variance reduction) with judge A. Reports the estimate, a Wald 95% half-width, the number of failures and the running time for each sample size. For the paper, exact (Clopper-Pearson) intervals were computed from the failure counts with `scripts/clopper_pearson.py`, because the Wald interval is unreliable with few failures.
 
 Result (2026-09-21, N = 1e7, seed 42, `-001` of data015/012/010/008): the BDD
 value lies inside the 95% interval on all four instances. On data008-001
